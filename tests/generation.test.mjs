@@ -1,5 +1,8 @@
 import { test, after } from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { createElement } from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
 import { createServer } from 'vite';
 import supportedImageSizes from '../server/image-sizes.json' with { type: 'json' };
 
@@ -9,6 +12,7 @@ const vite = await createServer({
   appType: 'custom',
 });
 const api = await vite.ssrLoadModule('/src/generation.ts');
+const { GenerationStudio } = await vite.ssrLoadModule('/src/generation-studio.tsx');
 after(() => vite.close());
 const png =
   'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aV1cAAAAASUVORK5CYII=';
@@ -61,6 +65,64 @@ test('common aspect ratios use consistent labels and preserve supported API size
   assert.equal(api.formatImageSize('auto', 'Auto'), 'Auto');
   assert.equal(api.formatImageSize('legacy-size', '自动'), 'legacy-size');
   assert.throws(() => api.normalizeImageConfig({ ...config, size: '16:9' }), /invalidConfig/);
+});
+
+test('result frames do not resize to the requested or subsequently selected aspect ratio', () => {
+  const noop = () => {};
+  for (const size of supportedImageSizes) {
+    const html = renderToStaticMarkup(
+      createElement(GenerationStudio, {
+        lang: 'zh',
+        references: [],
+        items: [],
+        job: {
+          status: 'success',
+          result: `data:image/png;base64,${png}`,
+          size,
+          model: 'test',
+          references: [],
+        },
+        config: { ...config, size: size === '864x1536' ? '1536x864' : '864x1536' },
+        characterLoading: false,
+        characterError: '',
+        poseDepth: false,
+        onDepth: noop,
+        onChoose: noop,
+        onRemove: noop,
+        onAngle: noop,
+        onUpload: noop,
+        onOpenCostumeUpload: noop,
+        onSettings: noop,
+        onRun: noop,
+        onCancel: noop,
+        onRestore: noop,
+        notify: noop,
+      }),
+    );
+    assert.match(html, /<div class="studio-canvas[^\"]*">/);
+    assert.match(html, /<div class="studio-result-image">/);
+    assert.doesNotMatch(html, /aspect-ratio:/);
+  }
+});
+
+test('square result frames constrain intrinsic image sizing and contain the entire image', () => {
+  const css = readFileSync(new URL('../src/styles.css', import.meta.url), 'utf8');
+  const canvasRules = [...css.matchAll(/\.studio-canvas\s*\{([^}]+)\}/g)];
+  assert.equal(
+    canvasRules.length,
+    1,
+    'No fixed-height mobile override may resize the square frame',
+  );
+  assert.match(canvasRules[0][1], /aspect-ratio:\s*1\s*\/\s*1/);
+  assert.match(canvasRules[0][1], /grid-template-rows:\s*minmax\(0,\s*1fr\)/);
+  assert.match(canvasRules[0][1], /min-height:\s*0/);
+  assert.match(canvasRules[0][1], /height:\s*auto/);
+  const buttonRule = css.match(/\.studio-result-image > button\s*\{([^}]+)\}/)?.[1];
+  const imageRule = css.match(/\.studio-result-image > button > img\s*\{([^}]+)\}/)?.[1];
+  assert.match(buttonRule, /position:\s*absolute/);
+  assert.match(buttonRule, /inset:\s*0/);
+  assert.match(imageRule, /object-fit:\s*contain/);
+  assert.match(imageRule, /min-height:\s*0/);
 });
 
 test('new aspect ratio selections send pixel dimensions unchanged to the provider', async () => {
