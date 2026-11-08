@@ -4,6 +4,7 @@ import { isDepthVariant, poseDepthOrigin } from './pose-depth';
 import { isCustomAsset } from './custom-assets';
 import { imageRequestEndpoint } from './image-transport';
 import { generateWithJobApi } from './image-job-transport';
+import supportedImageSizes from '../server/image-sizes.json';
 
 export interface ImageConfig {
   baseUrl: string;
@@ -48,7 +49,21 @@ export const defaultImageConfig: ImageConfig = {
   quality: 'auto',
   rememberKey: false,
 };
-export const imageSizes = ['1024x1024', '1024x1536', '1536x1024', '2048x2048', 'auto'];
+export const imageSizes = supportedImageSizes;
+
+export function formatImageSize(size: string, automaticLabel: string): string {
+  if (size === 'auto') return automaticLabel;
+  if (!imageSizes.includes(size)) return size;
+  const [width, height] = size.split('x').map(Number);
+  let divisor = width;
+  let remainder = height;
+  while (remainder) {
+    const nextRemainder = divisor % remainder;
+    divisor = remainder;
+    remainder = nextRemainder;
+  }
+  return `${width / divisor}:${height / divisor} (${width}×${height})`;
+}
 
 export function imageEndpoint(baseUrl: string): string {
   const url = new URL(baseUrl.trim());

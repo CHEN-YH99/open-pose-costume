@@ -1,6 +1,7 @@
 import { createHash, randomBytes, randomUUID, timingSafeEqual } from 'node:crypto';
 import { createServer } from 'node:http';
 import sharp from 'sharp';
+import imageSizes from './image-sizes.json' with { type: 'json' };
 
 const PORT = Number(process.env.PORT || 8788);
 const MAX_REQUEST_BYTES = 32 * 1024 * 1024;
@@ -315,8 +316,7 @@ async function submitJob(request, response) {
   const prompt = textField(form, 'prompt', 20_000);
   const size = textField(form, 'size', 30);
   const quality = textField(form, 'quality', 20);
-  if (!['1024x1024', '1024x1536', '1536x1024', '2048x2048', 'auto'].includes(size))
-    throw new ApiError(400, 'invalid_size');
+  if (!imageSizes.includes(size)) throw new ApiError(400, 'invalid_size');
   if (!['auto', 'low', 'medium', 'high'].includes(quality))
     throw new ApiError(400, 'invalid_quality');
 

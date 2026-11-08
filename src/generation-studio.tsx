@@ -23,7 +23,7 @@ import {
 import { ComparisonWipe, ImageDownloadButton, ImageLightbox } from './generation-ui';
 import { generationCopy } from './generation-copy';
 import { studioCopy } from './studio-copy';
-import { imageSizes, referencePrompt } from './generation';
+import { formatImageSize, imageSizes, referencePrompt } from './generation';
 import type { GenerationJob, ImageConfig, ImageReference } from './generation';
 import {
   deleteGenerationRecord,
@@ -269,7 +269,7 @@ function HistoryThumbnail({
             minute: '2-digit',
           })}
           <small>
-            {record.model} · {record.size}
+            {record.model} · {formatImageSize(record.size, generationCopy[lang].auto)}
           </small>
           <small>
             {studioCopy[lang].restore} <ArrowRight size={12} />
@@ -773,7 +773,7 @@ export function GenerationStudio({
           >
             {imageSizes.map((value) => (
               <option key={value} value={value}>
-                {value === 'auto' ? g.auto : value.replace('x', ' × ')}
+                {formatImageSize(value, g.auto)}
               </option>
             ))}
           </select>
@@ -1068,7 +1068,7 @@ export function GenerationStudio({
                 )}
               </span>
               <code>
-                {job.model} · {job.size || size}
+                {job.model} · {formatImageSize(job.size || size, g.auto)}
               </code>
             </div>
           )}

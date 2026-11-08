@@ -1,6 +1,7 @@
 import { test, after } from 'node:test';
 import assert from 'node:assert/strict';
 import { createServer } from 'vite';
+import supportedImageSizes from '../server/image-sizes.json' with { type: 'json' };
 
 const vite = await createServer({
   server: { middlewareMode: true, hmr: false, ws: false },
@@ -27,6 +28,59 @@ const references = ['pose', 'costume'].map((kind) => ({
     original: `https://ai-${kind}-gallery.pages.dev/img/${kind}.png`,
   },
 }));
+
+test('common aspect ratios use consistent labels and preserve supported API size values', () => {
+  const expectedLabels = {
+    '1024x1024': '1:1 (1024×1024)',
+    '2048x2048': '1:1 (2048×2048)',
+    '1024x1536': '2:3 (1024×1536)',
+    '1152x1536': '3:4 (1152×1536)',
+    '1024x1280': '4:5 (1024×1280)',
+    '864x1536': '9:16 (864×1536)',
+    '1536x1024': '3:2 (1536×1024)',
+    '1536x1152': '4:3 (1536×1152)',
+    '1280x1024': '5:4 (1280×1024)',
+    '1536x864': '16:9 (1536×864)',
+    auto: '自动',
+  };
+  assert.deepEqual(api.imageSizes, supportedImageSizes);
+  assert.deepEqual(api.imageSizes, Object.keys(expectedLabels));
+  assert.equal(new Set(api.imageSizes).size, api.imageSizes.length);
+  assert.equal(api.defaultImageConfig.size, '1024x1536');
+  for (const size of api.imageSizes) {
+    assert.equal(api.formatImageSize(size, '自动'), expectedLabels[size]);
+    assert.equal(api.normalizeImageConfig({ ...config, size }).size, size);
+    if (size === 'auto') continue;
+    const [width, height] = size.split('x').map(Number);
+    assert.equal(width % 16, 0);
+    assert.equal(height % 16, 0);
+    assert.ok(Math.max(width, height) < 3840);
+    assert.ok(Math.max(width, height) / Math.min(width, height) <= 3);
+    assert.ok(width * height >= 655_360 && width * height <= 8_294_400);
+  }
+  assert.equal(api.formatImageSize('auto', 'Auto'), 'Auto');
+  assert.equal(api.formatImageSize('legacy-size', '自动'), 'legacy-size');
+  assert.throws(() => api.normalizeImageConfig({ ...config, size: '16:9' }), /invalidConfig/);
+});
+
+test('new aspect ratio selections send pixel dimensions unchanged to the provider', async () => {
+  for (const size of supportedImageSizes) {
+    const calls = [];
+    await api.generateReferenceImage(
+      { ...config, size },
+      references,
+      'draw a character',
+      new AbortController().signal,
+      async (url, options) => {
+        calls.push({ url, options });
+        return calls.length <= 2
+          ? new Response(Buffer.from(png, 'base64'), { headers: { 'Content-Type': 'image/png' } })
+          : Response.json({ data: [{ b64_json: png }] });
+      },
+    );
+    assert.equal(calls[2].options.body.get('size'), size);
+  }
+});
 
 test('endpoint normalization accepts compatible bases and rejects credential-bearing URLs', () => {
   for (const base of [

@@ -23,6 +23,7 @@ import { apiGuideSteps, generationCopy } from './generation-copy';
 import {
   clearImageConfig,
   defaultImageConfig,
+  formatImageSize,
   imageEndpoint,
   imageSizes,
   saveImageConfig,
@@ -281,7 +282,7 @@ export function ImageSettings({
               <select value={draft.size} onChange={(e) => update('size', e.target.value)}>
                 {imageSizes.map((size) => (
                   <option key={size} value={size}>
-                    {size === 'auto' ? t.auto : size}
+                    {formatImageSize(size, t.auto)}
                   </option>
                 ))}
               </select>
