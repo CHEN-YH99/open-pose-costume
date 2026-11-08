@@ -68,6 +68,9 @@ import type { Sort, View } from './library';
 import type { Catalog, Lang, Reference, Variant } from './types';
 
 type Board = { pose?: string; costume?: string; character?: string };
+const projectOwner = 'CHEN-YH99';
+const projectProfile = `https://github.com/${projectOwner}`;
+const projectRepository = `${projectProfile}/open-pose-costume`;
 const initialParams = new URLSearchParams(window.location.search);
 const isLanguage = (v: unknown): v is Lang => v === 'zh' || v === 'en';
 const isIds = (v: unknown): v is string[] =>
@@ -888,47 +891,15 @@ export default function App() {
               <ChevronRight size={14} />
             </button>
             <a
-              className="social-link"
-              href="https://x.com/HongyeMain"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={t.xProfile}
-              title={t.xProfile}
-            >
-              <svg
-                width={16}
-                height={16}
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.64 7.584H.47l8.6-9.835L0 1.154h7.594l5.243 6.932 6.064-6.933ZM17.61 20.645h2.039L6.486 3.24H4.298L17.61 20.645Z" />
-              </svg>
-              @HongyeMain
-              <ArrowUpRight size={14} />
-            </a>
-            <a
               className="social-link github-link"
-              href="https://github.com/hongye007/open-pose-costume"
+              href={projectRepository}
               target="_blank"
               rel="noopener noreferrer"
               aria-label={t.githubRepo}
               title={t.githubRepo}
             >
               <Github size={16} />
-              GitHub / open-pose-costume
-              <ArrowUpRight size={14} />
-            </a>
-            <a
-              className="social-link github-link"
-              href="https://github.com/hongye007/open-pose-costume-skill"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={t.skillRepo}
-              title={t.skillRepo}
-            >
-              <Sparkles size={16} />
-              <span>Skill / open-pose-costume-skill</span>
+              <span>{projectOwner} / open-pose-costume</span>
               <ArrowUpRight size={14} />
             </a>
           </div>
@@ -1774,44 +1745,28 @@ export default function App() {
             <h3>{t.projectRepositories}</h3>
             <a
               className="project-link"
-              href="https://github.com/hongye007/open-pose-costume"
+              href={projectRepository}
               target="_blank"
               rel="noopener noreferrer"
             >
               <Github size={18} />
               <span>
                 <strong>open-pose-costume</strong>
-                <small>github.com/hongye007/open-pose-costume</small>
-              </span>
-              <ExternalLink size={15} />
-            </a>
-            <a
-              className="project-link"
-              href="https://github.com/hongye007/open-pose-costume-skill"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Sparkles size={18} />
-              <span>
-                <strong>open-pose-costume-skill</strong>
-                <small>github.com/hongye007/open-pose-costume-skill</small>
+                <small>github.com/{projectOwner}/open-pose-costume</small>
               </span>
               <ExternalLink size={15} />
             </a>
           </section>
           <section className="project-section project-author">
-            <h3>{t.projectAuthor}</h3>
+            <h3>{t.projectMaintainer}</h3>
             <div>
-              <span className="author-mark">H</span>
+              <span className="author-mark">{projectOwner.charAt(0)}</span>
               <span>
-                <strong>hongye007</strong>
-                <small>@HongyeMain</small>
+                <strong>{projectOwner}</strong>
+                <small>github.com/{projectOwner}</small>
               </span>
-              <a href="https://github.com/hongye007" target="_blank" rel="noopener noreferrer">
+              <a href={projectProfile} target="_blank" rel="noopener noreferrer">
                 GitHub <ExternalLink size={13} />
-              </a>
-              <a href="https://x.com/HongyeMain" target="_blank" rel="noopener noreferrer">
-                X <ExternalLink size={13} />
               </a>
             </div>
           </section>
