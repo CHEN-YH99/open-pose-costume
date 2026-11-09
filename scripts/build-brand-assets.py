@@ -8,10 +8,12 @@ import numpy as np
 ROOT = Path(__file__).resolve().parent.parent
 original = Image.open(ROOT / 'output/imagegen/open-pose-costume-logo-original.png').convert('RGB')
 pixels = np.asarray(original).astype(float)
-# Remove the near-white matte while preserving opaque blue interiors.
-distance = 255 - pixels.min(axis=2)
-alpha = np.clip((distance - 15) / 30, 0, 1)
-rgba = np.dstack((pixels, np.round(alpha * 255))).astype('uint8')
+# Extract the supplied blue mark, remove its white matte, and match the theme.
+blue_chroma = pixels[:, :, 2] - pixels[:, :, 0]
+alpha = np.clip((blue_chroma - 12) / 150, 0, 1)
+theme_pixels = np.empty_like(pixels)
+theme_pixels[:] = (36, 91, 219)  # #245BDB
+rgba = np.dstack((theme_pixels, np.round(alpha * 255))).astype('uint8')
 source = Image.fromarray(rgba)
 source.save(ROOT / 'output/imagegen/logo-transparent-full.png')
 box = source.getchannel('A').point(lambda value: 255 if value > 32 else 0).getbbox()

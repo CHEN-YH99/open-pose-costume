@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="public/brand/logo-mark.png" width="72" height="72" alt="Open Pose & Costume Logo" />
+<img src="public/brand/logo-mark.png" width="72" height="72" alt="Origin Pose Logo" />
 
-# Open Pose & Costume
+# Origin Pose
 
 ### 从姿势、服饰到人物
 
@@ -15,7 +15,7 @@
 
 </div>
 
-![Open Pose & Costume：姿势、服饰与人物参考组合生成角色](docs/images/hero-reference-banner-v3-zh.webp)
+![Origin Pose：姿势、服饰与人物参考组合生成角色](docs/images/hero-reference-banner-v3-zh.webp)
 
 <table align="center">
   <thead>

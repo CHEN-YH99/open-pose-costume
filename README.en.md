@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="public/brand/logo-mark.png" width="72" height="72" alt="Open Pose & Costume logo" />
+<img src="public/brand/logo-mark.png" width="72" height="72" alt="Origin Pose logo" />
 
-# Open Pose & Costume
+# Origin Pose
 
 ### From pose and outfit to character
 
@@ -15,7 +15,7 @@ Find inspiration, combine references and generate characters in one place.
 
 </div>
 
-![Open Pose & Costume: pose, costume and character references combined into a generated character](docs/images/hero-reference-banner-v3-en.webp)
+![Origin Pose: pose, costume and character references combined into a generated character](docs/images/hero-reference-banner-v3-en.webp)
 
 <table align="center">
   <thead>
