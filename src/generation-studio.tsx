@@ -24,7 +24,10 @@ import { ComparisonWipe, ImageDownloadButton, ImageLightbox } from './generation
 import { generationCopy } from './generation-copy';
 import { studioCopy } from './studio-copy';
 import { formatImageSize, imageSizes, referencePrompt } from './generation';
-import type { GenerationJob, ImageConfig, ImageReference } from './generation';
+import type { GenerationJob, GenerationOptions, ImageConfig, ImageReference } from './generation';
+import { resolveThreeViewSize, threeViewPrompt, threeViewSizes } from './three-view';
+import { threeViewCopy } from './three-view-copy';
+import { ThreeViewResult } from './three-view-result';
 import {
   deleteGenerationRecord,
   listGenerationHistory,
@@ -356,11 +359,7 @@ export function GenerationStudio({
   onUpload: (file: File, kind: 'character' | 'costume') => void;
   onOpenCostumeUpload: () => void;
   onSettings: () => void;
-  onRun: (
-    references: ImageReference[],
-    prompt: string,
-    options: Pick<ImageConfig, 'size' | 'quality'>,
-  ) => void;
+  onRun: (references: ImageReference[], prompt: string, options: GenerationOptions) => void;
   onCancel: () => void;
   onRestore: (record: GenerationRecord, references: ImageReference[], source: string) => void;
   notify: (message: string) => void;
@@ -373,7 +372,10 @@ export function GenerationStudio({
   const [customPrompt, setCustomPrompt] = useState<{ text: string; references: string } | null>(
     null,
   );
-  const [size, setSize] = useState(config.size);
+  const [threeView, setThreeView] = useState(job?.threeView === true);
+  const [singleSize, setSingleSize] = useState(config.size);
+  const [threeSize, setThreeSize] = useState(resolveThreeViewSize(job?.size || config.size));
+  const size = threeView ? threeSize : singleSize;
   const [quality, setQuality] = useState(config.quality);
   const [mode, setMode] = useState<'result' | 'split' | 'overlay'>('result');
   const [compareKind, setCompareKind] = useState<Kind>('pose');
@@ -396,12 +398,15 @@ export function GenerationStudio({
   const loading = job?.status === 'loading';
   const ready = !!(config.baseUrl && config.apiKey && config.model);
   const missing = kinds.filter(
-    (kind) => kind !== 'character' && !references.some((ref) => ref.kind === kind),
+    (kind) =>
+      kind !== 'character' &&
+      !(threeView && kind === 'pose') &&
+      !references.some((ref) => ref.kind === kind),
   );
   const autoPrompt = references.length
-    ? `${referencePrompt(references, lang)}${style !== 'follow' ? `\n${t.style}: ${t[style]}.` : ''}${extra.trim() ? `\n${extra.trim()}` : ''}`
+    ? `${threeView ? threeViewPrompt(references, lang) : referencePrompt(references, lang)}${style !== 'follow' ? `\n${t.style}: ${t[style]}.` : ''}${extra.trim() ? `\n${extra.trim()}` : ''}`
     : '';
-  const fingerprint = referenceFingerprint(references);
+  const fingerprint = `${threeView ? 'three' : 'single'}:${referenceFingerprint(references)}`;
   const customActive = customPrompt?.references === fingerprint;
   const prompt = customActive ? customPrompt.text : autoPrompt;
   const poseAlternatives = useMemo(
@@ -427,7 +432,7 @@ export function GenerationStudio({
   const compared =
     comparisonReferences.find((ref) => ref.kind === compareKind) || comparisonReferences[0];
   useEffect(() => {
-    setSize(config.size);
+    setSingleSize(config.size);
     setQuality(config.quality);
   }, [config.size, config.quality]);
   useEffect(() => {
@@ -450,7 +455,7 @@ export function GenerationStudio({
     if (!pendingPoseGeneration.current || poseItem?.id !== pendingPoseGeneration.current) return;
     pendingPoseGeneration.current = null;
     if (missing.length || !ready || !autoPrompt.trim() || loading || characterLoading) return;
-    onRun(references, autoPrompt, { size, quality });
+    onRun(references, autoPrompt, { size, quality, threeView });
   }, [
     poseItem?.id,
     references,
@@ -462,6 +467,7 @@ export function GenerationStudio({
     onRun,
     size,
     quality,
+    threeView,
   ]);
   useEffect(() => {
     if (!job?.result || job.status !== 'success' || savedResult.current === job || job.restored)
@@ -480,6 +486,7 @@ export function GenerationStudio({
           prompt: completed.prompt,
           references: completed.references,
           image,
+          threeView: completed.threeView === true,
         });
         setHistory(await listGenerationHistory());
         setHistoryError(false);
@@ -505,27 +512,29 @@ export function GenerationStudio({
     });
     const source = URL.createObjectURL(record.image);
     restoredUrls.current.push(source);
-    setCustomPrompt({ text: record.prompt, references: referenceFingerprint(restoredRefs) });
+    setCustomPrompt({
+      text: record.prompt,
+      references: `${record.threeView ? 'three' : 'single'}:${referenceFingerprint(restoredRefs)}`,
+    });
+    setThreeView(record.threeView === true);
     setStyle('follow');
     setExtra('');
-    setSize(record.size);
+    if (record.threeView) setThreeSize(resolveThreeViewSize(record.size));
+    else setSingleSize(record.size);
     setQuality(record.quality);
     onRestore(record, restoredRefs, source);
     setHistoryOpen(false);
   }
   function run() {
     if (missing.length || !ready || !prompt.trim() || loading || characterLoading) return;
-    onRun(references, prompt, { size, quality });
+    onRun(references, prompt, {
+      size: threeView ? resolveThreeViewSize(size) : size,
+      quality,
+      threeView,
+    });
   }
   function changePose() {
-    if (
-      !poseAlternatives.length ||
-      missing.length ||
-      !ready ||
-      loading ||
-      characterLoading
-    )
-      return;
+    if (!poseAlternatives.length || missing.length || !ready || loading || characterLoading) return;
     const nextPose = poseAlternatives[Math.floor(Math.random() * poseAlternatives.length)];
     pendingPoseGeneration.current = nextPose.id;
     setCustomPrompt(null);
@@ -638,7 +647,11 @@ export function GenerationStudio({
                   </button>
                   <div className="studio-slot-label">
                     <strong>{g[kind]}</strong>
-                    <small>{kind === 'character' ? t.optional : t.required}</small>
+                    <small>
+                      {kind === 'character' || (threeView && kind === 'pose')
+                        ? t.optional
+                        : t.required}
+                    </small>
                   </div>
                   <div className="studio-slot-caption">
                     <span>{ref ? ref.title[lang] : t.choose}</span>
@@ -709,7 +722,9 @@ export function GenerationStudio({
               <input
                 type="checkbox"
                 checked={poseDepth}
-                disabled={loading || (!poseDepth && (!poseItem || !hasPoseDepth(poseItem)))}
+                disabled={
+                  loading || threeView || (!poseDepth && (!poseItem || !hasPoseDepth(poseItem)))
+                }
                 onChange={(e) => {
                   onDepth(e.target.checked);
                   setCustomPrompt(null);
@@ -720,7 +735,7 @@ export function GenerationStudio({
             {poseItem && !hasPoseDepth(poseItem) && (
               <small className="depth-availability-note">{copy[lang].noDepth}</small>
             )}
-            {poseItem && poseItem.variants.length > 1 && (
+            {!threeView && poseItem && poseItem.variants.length > 1 && (
               <label className="studio-angle">
                 {t.angle}
                 <select
@@ -761,6 +776,22 @@ export function GenerationStudio({
               </button>
             ))}
           </div>
+          <label className="three-view-toggle">
+            <input
+              type="checkbox"
+              checked={threeView}
+              disabled={loading}
+              onChange={(event) => {
+                const enabled = event.target.checked;
+                if (enabled && !threeView) setThreeSize(resolveThreeViewSize(size));
+                setThreeView(enabled);
+                setCustomPrompt(null);
+                pendingPoseGeneration.current = null;
+              }}
+            />
+            {threeViewCopy[lang].enable}
+          </label>
+          {threeView && <p className="three-view-hint">{threeViewCopy[lang].modeHint}</p>}
           <label className="studio-field-label" htmlFor="studio-size">
             {t.size}
           </label>
@@ -769,9 +800,13 @@ export function GenerationStudio({
             className="studio-select"
             disabled={loading}
             value={size}
-            onChange={(e) => setSize(e.target.value)}
+            onChange={(e) =>
+              threeView
+                ? setThreeSize(resolveThreeViewSize(e.target.value))
+                : setSingleSize(e.target.value)
+            }
           >
-            {imageSizes.map((value) => (
+            {(threeView ? threeViewSizes : imageSizes).map((value) => (
               <option key={value} value={value}>
                 {formatImageSize(value, g.auto)}
               </option>
@@ -863,242 +898,281 @@ export function GenerationStudio({
           </div>
         </section>
         <section className="studio-result" aria-label={g.generated}>
-          <div className="studio-result-toolbar">
-            <div className="generation-preview-switch" role="group" aria-label={g.previewMode}>
-              {(['result', 'split', 'overlay'] as const).map((key) => (
-                <button
-                  key={key}
-                  disabled={!job?.result || loading}
-                  aria-pressed={mode === key}
-                  onClick={() => setMode(key)}
-                >
-                  {key === 'result' ? t.resultOnly : key === 'split' ? g.sideBySide : g.overlay}
-                </button>
-              ))}
-            </div>
-            {job?.result && (
-              <button
-                className="icon-button"
-                aria-label={g.openImage}
-                onClick={() => openImage(job.result!, g.generated, 'generated-character')}
-              >
-                <Maximize2 size={17} />
-              </button>
-            )}
-          </div>
-          {job?.result && mode !== 'result' && (
-            <label className="studio-compare-label">
-              {t.compare}
-              <select
-                value={compared?.kind}
-                onChange={(e) => setCompareKind(e.target.value as Kind)}
-              >
-                {job.references.map((ref) => (
-                  <option key={ref.kind} value={ref.kind}>
-                    {g[ref.kind]}
-                  </option>
-                ))}
-              </select>
-              {mode === 'overlay' && <span>{g.overlayHint}</span>}
-            </label>
-          )}
-          <div className={`studio-canvas ${mode === 'split' && job?.result ? 'studio-split' : ''}`}>
-            {loading ? (
-              <div className="studio-placeholder" role="status">
-                <LoaderCircle size={31} className="spinner" />
-                <h2>{g.waiting}</h2>
-                <p>{t.loadingHint}</p>
-                <span className="studio-elapsed">
-                  <Clock3 size={13} />
-                  {t.elapsed} {elapsed} {t.seconds}
-                </span>
-                <button className="secondary-button" onClick={onCancel}>
-                  {t.cancel}
-                </button>
-              </div>
-            ) : job?.status === 'error' || job?.status === 'cancelled' ? (
-              <div className="studio-placeholder studio-failed" role="alert">
-                <RotateCcw size={28} />
-                <h2>{job.status === 'cancelled' ? g.cancelled : g.failed}</h2>
-                <p style={{ whiteSpace: 'pre-wrap', overflowWrap: 'anywhere' }}>{job.status === 'cancelled' ? t.keepWorking : job.error}</p>
-                {job.status === 'error' && <button className="secondary-button" onClick={async (event) => {
-                  const button = event.currentTarget;
-                  try { await navigator.clipboard.writeText(job.error || ''); button.textContent = lang === 'zh' ? '已复制' : 'Copied'; }
-                  catch { window.prompt(lang === 'zh' ? '请复制诊断信息' : 'Copy diagnostics', job.error || ''); }
-                }}>{lang === 'zh' ? '复制诊断信息' : 'Copy diagnostics'}</button>}
-                <button
-                  className="primary-button"
-                  disabled={!ready}
-                  onClick={() =>
-                    onRun(job.references, job.prompt, {
-                      size: job.size || size,
-                      quality: job.quality || quality,
-                    })
-                  }
-                >
-                  <RotateCcw size={15} />
-                  {g.retry}
-                </button>
-              </div>
-            ) : job?.result ? (
-              imageFailed ? (
-                <div className="studio-placeholder">
-                  <p>{g.imageFailed}</p>
-                  <button
-                    className="secondary-button"
-                    onClick={() => {
-                      setImageFailed(false);
-                      setAttempt(attempt + 1);
-                    }}
-                  >
-                    {g.retryImage}
-                  </button>
-                </div>
-              ) : mode === 'overlay' && compared ? (
-                <ComparisonWipe
-                  key={`${job.result}-${compared.variant.id}-${attempt}`}
-                  reference={compared}
-                  generated={job.result}
-                  lang={lang}
-                  onImageError={() => setImageFailed(true)}
-                  onOpenReference={() =>
-                    openImage(compared.variant.original, compared.title[lang], compared.variant.id)
-                  }
-                  onOpenGenerated={() => openImage(job.result!, g.generated, 'generated-character')}
-                />
-              ) : (
-                <>
-                  {mode === 'split' && compared && (
-                    <div className="studio-result-image">
-                      <span className="studio-image-tag">{g[compared.kind]}</span>
-                      <button
-                        aria-label={`${g.openImage}: ${g[compared.kind]}`}
-                        onClick={() =>
-                          openImage(
-                            compared.variant.original,
-                            compared.title[lang],
-                            compared.variant.id,
-                          )
-                        }
-                      >
-                        <RemoteImage
-                          src={compared.variant.image}
-                          alt={compared.title[lang]}
-                          lang={lang}
-                          eager
-                          retryable
-                        />
-                      </button>
-                      <ImageDownloadButton
-                        source={compared.variant.original}
-                        filename={compared.variant.id}
-                        lang={lang}
-                      />
-                    </div>
-                  )}
-                  <div className="studio-result-image">
-                    <span className="studio-image-tag">{g.generated}</span>
+          {job?.threeView && job.status === 'success' && job.result ? (
+            <ThreeViewResult
+              key={job.result}
+              source={job.result}
+              lang={lang}
+              onOpen={() =>
+                openImage(job.result!, threeViewCopy[lang].image, 'three-view-character')
+              }
+            />
+          ) : (
+            <>
+              <div className="studio-result-toolbar">
+                <div className="generation-preview-switch" role="group" aria-label={g.previewMode}>
+                  {(['result', 'split', 'overlay'] as const).map((key) => (
                     <button
-                      aria-label={`${g.openImage}: ${g.generated}`}
-                      onClick={() => openImage(job.result!, g.generated, 'generated-character')}
+                      key={key}
+                      disabled={!job?.result || loading}
+                      aria-pressed={mode === key}
+                      onClick={() => setMode(key)}
                     >
-                      <img
-                        key={`${job.result}-${attempt}`}
-                        src={job.result}
-                        alt={g.generated}
-                        referrerPolicy="no-referrer"
-                        onError={() => setImageFailed(true)}
-                      />
+                      {key === 'result' ? t.resultOnly : key === 'split' ? g.sideBySide : g.overlay}
+                    </button>
+                  ))}
+                </div>
+                {job?.result && (
+                  <button
+                    className="icon-button"
+                    aria-label={g.openImage}
+                    onClick={() => openImage(job.result!, g.generated, 'generated-character')}
+                  >
+                    <Maximize2 size={17} />
+                  </button>
+                )}
+              </div>
+              {job?.result && mode !== 'result' && (
+                <label className="studio-compare-label">
+                  {t.compare}
+                  <select
+                    value={compared?.kind}
+                    onChange={(e) => setCompareKind(e.target.value as Kind)}
+                  >
+                    {job.references.map((ref) => (
+                      <option key={ref.kind} value={ref.kind}>
+                        {g[ref.kind]}
+                      </option>
+                    ))}
+                  </select>
+                  {mode === 'overlay' && <span>{g.overlayHint}</span>}
+                </label>
+              )}
+              <div
+                className={`studio-canvas ${mode === 'split' && job?.result ? 'studio-split' : ''}`}
+              >
+                {loading ? (
+                  <div className="studio-placeholder" role="status">
+                    <LoaderCircle size={31} className="spinner" />
+                    <h2>{g.waiting}</h2>
+                    <p>{t.loadingHint}</p>
+                    <span className="studio-elapsed">
+                      <Clock3 size={13} />
+                      {t.elapsed} {elapsed} {t.seconds}
+                    </span>
+                    <button className="secondary-button" onClick={onCancel}>
+                      {t.cancel}
                     </button>
                   </div>
-                </>
-              )
-            ) : (
-              <div className="studio-placeholder studio-empty">
-                <div className="studio-empty-composition">
-                  {kinds.map((kind, index) => {
-                    const ref = references.find((value) => value.kind === kind),
-                      Icon = referenceIcons[kind];
-                    return (
-                      <div key={kind}>
-                        {index > 0 && <Plus size={14} />}
-                        <button
-                          onClick={() => setPicker(kind)}
-                          aria-label={`${t.choose} ${g[kind]}`}
-                        >
-                          {ref ? (
+                ) : job?.status === 'error' || job?.status === 'cancelled' ? (
+                  <div className="studio-placeholder studio-failed" role="alert">
+                    <RotateCcw size={28} />
+                    <h2>{job.status === 'cancelled' ? g.cancelled : g.failed}</h2>
+                    <p style={{ whiteSpace: 'pre-wrap', overflowWrap: 'anywhere' }}>
+                      {job.status === 'cancelled' ? t.keepWorking : job.error}
+                    </p>
+                    {job.status === 'error' && (
+                      <button
+                        className="secondary-button"
+                        onClick={async (event) => {
+                          const button = event.currentTarget;
+                          try {
+                            await navigator.clipboard.writeText(job.error || '');
+                            button.textContent = lang === 'zh' ? '已复制' : 'Copied';
+                          } catch {
+                            window.prompt(
+                              lang === 'zh' ? '请复制诊断信息' : 'Copy diagnostics',
+                              job.error || '',
+                            );
+                          }
+                        }}
+                      >
+                        {lang === 'zh' ? '复制诊断信息' : 'Copy diagnostics'}
+                      </button>
+                    )}
+                    <button
+                      className="primary-button"
+                      disabled={!ready}
+                      onClick={() =>
+                        onRun(job.references, job.prompt, {
+                          size: job.size || size,
+                          quality: job.quality || quality,
+                          threeView: job.threeView === true,
+                        })
+                      }
+                    >
+                      <RotateCcw size={15} />
+                      {g.retry}
+                    </button>
+                  </div>
+                ) : job?.result ? (
+                  imageFailed ? (
+                    <div className="studio-placeholder">
+                      <p>{g.imageFailed}</p>
+                      <button
+                        className="secondary-button"
+                        onClick={() => {
+                          setImageFailed(false);
+                          setAttempt(attempt + 1);
+                        }}
+                      >
+                        {g.retryImage}
+                      </button>
+                    </div>
+                  ) : mode === 'overlay' && compared ? (
+                    <ComparisonWipe
+                      key={`${job.result}-${compared.variant.id}-${attempt}`}
+                      reference={compared}
+                      generated={job.result}
+                      lang={lang}
+                      onImageError={() => setImageFailed(true)}
+                      onOpenReference={() =>
+                        openImage(
+                          compared.variant.original,
+                          compared.title[lang],
+                          compared.variant.id,
+                        )
+                      }
+                      onOpenGenerated={() =>
+                        openImage(job.result!, g.generated, 'generated-character')
+                      }
+                    />
+                  ) : (
+                    <>
+                      {mode === 'split' && compared && (
+                        <div className="studio-result-image">
+                          <span className="studio-image-tag">{g[compared.kind]}</span>
+                          <button
+                            aria-label={`${g.openImage}: ${g[compared.kind]}`}
+                            onClick={() =>
+                              openImage(
+                                compared.variant.original,
+                                compared.title[lang],
+                                compared.variant.id,
+                              )
+                            }
+                          >
                             <RemoteImage
-                              src={ref.variant.thumbnail}
-                              alt={ref.title[lang]}
+                              src={compared.variant.image}
+                              alt={compared.title[lang]}
                               lang={lang}
+                              eager
+                              retryable
                             />
-                          ) : (
-                            <Icon size={29} strokeWidth={1.2} />
-                          )}
+                          </button>
+                          <ImageDownloadButton
+                            source={compared.variant.original}
+                            filename={compared.variant.id}
+                            lang={lang}
+                          />
+                        </div>
+                      )}
+                      <div className="studio-result-image">
+                        <span className="studio-image-tag">{g.generated}</span>
+                        <button
+                          aria-label={`${g.openImage}: ${g.generated}`}
+                          onClick={() => openImage(job.result!, g.generated, 'generated-character')}
+                        >
+                          <img
+                            key={`${job.result}-${attempt}`}
+                            src={job.result}
+                            alt={g.generated}
+                            referrerPolicy="no-referrer"
+                            onError={() => setImageFailed(true)}
+                          />
                         </button>
                       </div>
-                    );
-                  })}
-                </div>
-                <h2>{t.emptyTitle}</h2>
-                <p>{t.emptyHint}</p>
-                {!ready && (
-                  <button className="secondary-button" onClick={onSettings}>
-                    <Settings2 size={15} />
-                    {t.noConfig}
-                  </button>
-                )}
-              </div>
-            )}
-          </div>
-          {job && (
-            <div className="studio-result-meta">
-              <span>
-                {loading ? (
-                  g.generating
-                ) : job.status === 'success' ? (
-                  <>
-                    <Check size={12} />
-                    {g.success}
-                  </>
-                ) : job.status === 'cancelled' ? (
-                  g.cancelled
+                    </>
+                  )
                 ) : (
-                  g.failed
+                  <div className="studio-placeholder studio-empty">
+                    <div className="studio-empty-composition">
+                      {kinds.map((kind, index) => {
+                        const ref = references.find((value) => value.kind === kind),
+                          Icon = referenceIcons[kind];
+                        return (
+                          <div key={kind}>
+                            {index > 0 && <Plus size={14} />}
+                            <button
+                              onClick={() => setPicker(kind)}
+                              aria-label={`${t.choose} ${g[kind]}`}
+                            >
+                              {ref ? (
+                                <RemoteImage
+                                  src={ref.variant.thumbnail}
+                                  alt={ref.title[lang]}
+                                  lang={lang}
+                                />
+                              ) : (
+                                <Icon size={29} strokeWidth={1.2} />
+                              )}
+                            </button>
+                          </div>
+                        );
+                      })}
+                    </div>
+                    <h2>{t.emptyTitle}</h2>
+                    <p>{threeView ? threeViewCopy[lang].emptyHint : t.emptyHint}</p>
+                    {!ready && (
+                      <button className="secondary-button" onClick={onSettings}>
+                        <Settings2 size={15} />
+                        {t.noConfig}
+                      </button>
+                    )}
+                  </div>
                 )}
-              </span>
-              <code>
-                {job.model} · {formatImageSize(job.size || size, g.auto)}
-              </code>
-            </div>
-          )}
-          {job?.result && job.status === 'success' && (
-            <>
-              <div className="studio-result-actions">
-                <ImageDownloadButton
-                  source={job.result}
-                  filename="generated-character"
-                  lang={lang}
-                  showLabel
-                />
-                <button
-                  className="secondary-button studio-reuse"
-                  disabled={
-                    loading ||
-                    !ready ||
-                    missing.length > 0 ||
-                    !prompt.trim() ||
-                    characterLoading ||
-                    poseAlternatives.length === 0
-                  }
-                  onClick={changePose}
-                >
-                  <Shuffle size={15} />
-                  {t.reuse}
-                  <ArrowRight size={14} />
-                </button>
               </div>
-              <p className="studio-result-note">{t.resultHint}</p>
+              {job && (
+                <div className="studio-result-meta">
+                  <span>
+                    {loading ? (
+                      g.generating
+                    ) : job.status === 'success' ? (
+                      <>
+                        <Check size={12} />
+                        {g.success}
+                      </>
+                    ) : job.status === 'cancelled' ? (
+                      g.cancelled
+                    ) : (
+                      g.failed
+                    )}
+                  </span>
+                  <code>
+                    {job.model} · {formatImageSize(job.size || size, g.auto)}
+                  </code>
+                </div>
+              )}
+              {job?.result && job.status === 'success' && (
+                <>
+                  <div className="studio-result-actions">
+                    <ImageDownloadButton
+                      source={job.result}
+                      filename="generated-character"
+                      lang={lang}
+                      showLabel
+                    />
+                    <button
+                      className="secondary-button studio-reuse"
+                      disabled={
+                        loading ||
+                        threeView ||
+                        !ready ||
+                        missing.length > 0 ||
+                        !prompt.trim() ||
+                        characterLoading ||
+                        poseAlternatives.length === 0
+                      }
+                      onClick={changePose}
+                    >
+                      <Shuffle size={15} />
+                      {t.reuse}
+                      <ArrowRight size={14} />
+                    </button>
+                  </div>
+                  <p className="studio-result-note">{t.resultHint}</p>
+                </>
+              )}
             </>
           )}
         </section>

@@ -48,9 +48,10 @@ import {
 import type {
   UploadedImageReference,
   GenerationJob,
-  ImageConfig,
+  GenerationOptions,
   ImageReference,
 } from './generation';
+import { isThreeViewSize } from './three-view';
 import {
   angles,
   copyText,
@@ -92,9 +93,14 @@ export default function App() {
       : storageGet('opc-language', navigator.language.startsWith('zh') ? 'zh' : 'en', isLanguage);
   });
   const t = copy[lang];
-  const [showDomainNotice, setShowDomainNotice] = useState(() =>
-    window.location.hostname === 'hongye007.github.io' &&
-    !storageGet('opc-domain-notice-opt-out-v2', false, (value): value is boolean => typeof value === 'boolean'),
+  const [showDomainNotice, setShowDomainNotice] = useState(
+    () =>
+      window.location.hostname === 'hongye007.github.io' &&
+      !storageGet(
+        'opc-domain-notice-opt-out-v2',
+        false,
+        (value): value is boolean => typeof value === 'boolean',
+      ),
   );
   const [domainNoticeOptOut, setDomainNoticeOptOut] = useState(false);
   const dismissDomainNotice = () => {
@@ -578,16 +584,18 @@ export default function App() {
   async function runGeneration(
     references: ImageReference[],
     prompt: string,
-    options: Pick<ImageConfig, 'size' | 'quality'>,
+    options: GenerationOptions,
   ) {
     generationController.current?.abort();
     const controller = new AbortController();
     generationController.current = controller;
-    const requestConfig = { ...imageConfig, ...options };
+    const requestConfig = { ...imageConfig, size: options.size, quality: options.quality };
     const model = requestConfig.model.trim();
     const details = { model, references, prompt, ...options };
     setGenerationJob({ ...details, status: 'loading' });
     try {
+      if (options.threeView && !isThreeViewSize(options.size))
+        throw new ImageGenerationError('invalidConfig');
       const result = await generateReferenceImage(
         requestConfig,
         references,
@@ -1471,6 +1479,7 @@ export default function App() {
                 size: record.size,
                 quality: record.quality,
                 restored: true,
+                threeView: record.threeView === true,
               });
             }}
           />
@@ -1773,22 +1782,43 @@ export default function App() {
         </Modal>
       )}
       {showDomainNotice && (
-        <Modal onClose={dismissDomainNotice} label={lang === 'zh' ? '新域名已启用' : 'Visit our new domain'} className="about-modal">
+        <Modal
+          onClose={dismissDomainNotice}
+          label={lang === 'zh' ? '新域名已启用' : 'Visit our new domain'}
+          className="about-modal"
+        >
           <div className="panel-heading">
             <h2>{lang === 'zh' ? '新域名已启用' : 'Visit our new domain'}</h2>
-            <button className="icon-button" aria-label={t.close} onClick={dismissDomainNotice}><X size={22} /></button>
+            <button className="icon-button" aria-label={t.close} onClick={dismissDomainNotice}>
+              <X size={22} />
+            </button>
           </div>
-          <p>{lang === 'zh'
-            ? '为了提供更稳定的网络访问服务，我们已启用新域名 omilic.com，建议前往新站继续使用。'
-            : 'For more reliable access, we have launched our new domain, omilic.com. We recommend continuing on the new site.'}</p>
-          <p>{lang === 'zh' ? '收藏和 API 配置保存在当前浏览器的本站数据中，切换域名后需要重新设置。' : 'Favorites and API settings are stored for this domain and will need to be set up again on the new site.'}</p>
+          <p>
+            {lang === 'zh'
+              ? '为了提供更稳定的网络访问服务，我们已启用新域名 omilic.com，建议前往新站继续使用。'
+              : 'For more reliable access, we have launched our new domain, omilic.com. We recommend continuing on the new site.'}
+          </p>
+          <p>
+            {lang === 'zh'
+              ? '收藏和 API 配置保存在当前浏览器的本站数据中，切换域名后需要重新设置。'
+              : 'Favorites and API settings are stored for this domain and will need to be set up again on the new site.'}
+          </p>
           <label className="domain-notice-opt-out">
-            <input type="checkbox" checked={domainNoticeOptOut} onChange={(event) => setDomainNoticeOptOut(event.target.checked)} />
+            <input
+              type="checkbox"
+              checked={domainNoticeOptOut}
+              onChange={(event) => setDomainNoticeOptOut(event.target.checked)}
+            />
             <span>{lang === 'zh' ? '不再提醒' : 'Do not remind me again'}</span>
           </label>
           <div className="domain-notice-actions">
-            <a className="primary-button" href={newDomainUrl} onClick={dismissDomainNotice}>{lang === 'zh' ? '前往新站' : 'Visit new site'}<ExternalLink size={16} /></a>
-            <button className="text-action" onClick={dismissDomainNotice}>{lang === 'zh' ? '暂时留在这里' : 'Stay here for now'}</button>
+            <a className="primary-button" href={newDomainUrl} onClick={dismissDomainNotice}>
+              {lang === 'zh' ? '前往新站' : 'Visit new site'}
+              <ExternalLink size={16} />
+            </a>
+            <button className="text-action" onClick={dismissDomainNotice}>
+              {lang === 'zh' ? '暂时留在这里' : 'Stay here for now'}
+            </button>
           </div>
         </Modal>
       )}

@@ -27,6 +27,11 @@ export interface UploadedImageReference extends ReferenceDetails {
   file: File;
 }
 export type ImageReference = GalleryImageReference | UploadedImageReference;
+export interface GenerationOptions {
+  size: string;
+  quality: ImageConfig['quality'];
+  threeView?: boolean;
+}
 export interface GenerationJob {
   model: string;
   references: ImageReference[];
@@ -37,6 +42,7 @@ export interface GenerationJob {
   size?: string;
   quality?: ImageConfig['quality'];
   restored?: boolean;
+  threeView?: boolean;
 }
 
 const SETTINGS_KEY = 'opc-image-settings';
@@ -288,7 +294,9 @@ export async function generateReferenceImage(
     ).catch((error) => {
       if (combined.aborted) throw error;
       const status = Number((error as { jobStatus?: unknown })?.jobStatus) || 0;
-      const detail = (error as { diagnostic?: string })?.diagnostic || safeMessage(error instanceof Error ? error.message : '', valid.apiKey);
+      const detail =
+        (error as { diagnostic?: string })?.diagnostic ||
+        safeMessage(error instanceof Error ? error.message : '', valid.apiKey);
       if (status === 403)
         throw new ImageGenerationError('accessDenied', `HTTP 403${detail ? ` · ${detail}` : ''}`);
       if ([400, 401].includes(status))
@@ -353,12 +361,18 @@ export async function generateReferenceImage(
       headers: { Authorization: `Bearer ${valid.apiKey}` },
       body: form,
     });
-    const { payload, diagnostic } = await readImageResponse(response, 'provider-request', endpoint, valid.apiKey);
+    const { payload, diagnostic } = await readImageResponse(
+      response,
+      'provider-request',
+      endpoint,
+      valid.apiKey,
+    );
     if (!response.ok || payload?.error) {
       const message = typeof payload?.error?.message === 'string' ? payload.error.message : '';
       throw new ImageGenerationError(
         response.status === 403 ? 'accessDenied' : 'providerFailed',
-        diagnostic || `HTTP ${response.status}${message ? ` · ${safeMessage(message, valid.apiKey)}` : ''}`,
+        diagnostic ||
+          `HTTP ${response.status}${message ? ` · ${safeMessage(message, valid.apiKey)}` : ''}`,
       );
     }
     return imageResult(payload);
