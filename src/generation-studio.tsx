@@ -25,7 +25,12 @@ import { generationCopy } from './generation-copy';
 import { studioCopy } from './studio-copy';
 import { formatImageSize, imageSizes, referencePrompt } from './generation';
 import type { GenerationJob, GenerationOptions, ImageConfig, ImageReference } from './generation';
-import { resolveThreeViewSize, threeViewPrompt, threeViewSizes } from './three-view';
+import {
+  enforceThreeViewStyle,
+  resolveThreeViewSize,
+  threeViewPrompt,
+  threeViewSizes,
+} from './three-view';
 import { threeViewCopy } from './three-view-copy';
 import { ThreeViewResult } from './three-view-result';
 import {
@@ -404,11 +409,12 @@ export function GenerationStudio({
       !references.some((ref) => ref.kind === kind),
   );
   const autoPrompt = references.length
-    ? `${threeView ? threeViewPrompt(references, lang) : referencePrompt(references, lang)}${style !== 'follow' ? `\n${t.style}: ${t[style]}.` : ''}${extra.trim() ? `\n${extra.trim()}` : ''}`
+    ? `${threeView ? threeViewPrompt(references, lang) : referencePrompt(references, lang)}${!threeView && style !== 'follow' ? `\n${t.style}: ${t[style]}.` : ''}${extra.trim() ? `\n${extra.trim()}` : ''}`
     : '';
   const fingerprint = `${threeView ? 'three' : 'single'}:${referenceFingerprint(references)}`;
   const customActive = customPrompt?.references === fingerprint;
-  const prompt = customActive ? customPrompt.text : autoPrompt;
+  const draftPrompt = customActive ? customPrompt.text : autoPrompt;
+  const prompt = threeView ? enforceThreeViewStyle(draftPrompt, lang) : draftPrompt;
   const poseAlternatives = useMemo(
     () => compatiblePoseAlternatives(items, references, poseItem),
     [items, references, poseItem],
@@ -759,22 +765,28 @@ export function GenerationStudio({
           <div className="studio-controls-divider" />
           <div className="studio-section-heading">
             <h2>{t.style}</h2>
-            <span>{t.optional}</span>
+            {!threeView && <span>{t.optional}</span>}
           </div>
           <div className="studio-styles">
-            {styleKeys.map((key) => (
-              <button
-                key={key}
-                aria-pressed={style === key}
-                disabled={loading}
-                onClick={() => {
-                  setStyle(key);
-                  setCustomPrompt(null);
-                }}
-              >
-                {t[key]}
+            {threeView ? (
+              <button aria-pressed="true" disabled>
+                {threeViewCopy[lang].hyperreal}
               </button>
-            ))}
+            ) : (
+              styleKeys.map((key) => (
+                <button
+                  key={key}
+                  aria-pressed={style === key}
+                  disabled={loading}
+                  onClick={() => {
+                    setStyle(key);
+                    setCustomPrompt(null);
+                  }}
+                >
+                  {t[key]}
+                </button>
+              ))
+            )}
           </div>
           <label className="three-view-toggle">
             <input
@@ -853,11 +865,17 @@ export function GenerationStudio({
             </label>
             <textarea
               id="studio-prompt"
-              value={prompt}
+              aria-describedby={threeView ? 'studio-three-view-style-hint' : undefined}
+              value={draftPrompt}
               rows={7}
               disabled={loading}
               onChange={(e) => setCustomPrompt({ text: e.target.value, references: fingerprint })}
             />
+            {threeView && (
+              <p id="studio-three-view-style-hint" className="three-view-hint">
+                {threeViewCopy[lang].styleHint}
+              </p>
+            )}
             <button
               className="text-action"
               disabled={loading}
@@ -994,11 +1012,15 @@ export function GenerationStudio({
                       className="primary-button"
                       disabled={!ready}
                       onClick={() =>
-                        onRun(job.references, job.prompt, {
-                          size: job.size || size,
-                          quality: job.quality || quality,
-                          threeView: job.threeView === true,
-                        })
+                        onRun(
+                          job.references,
+                          job.threeView ? enforceThreeViewStyle(job.prompt, lang) : job.prompt,
+                          {
+                            size: job.size || size,
+                            quality: job.quality || quality,
+                            threeView: job.threeView === true,
+                          },
+                        )
                       }
                     >
                       <RotateCcw size={15} />

@@ -47,11 +47,73 @@ test('three-view prompt is separate, consistent, full body and not bound to comp
   assert.match(chinese, /同一套服饰和鞋履/);
   assert.match(chinese, /头部到鞋底/);
   assert.match(chinese, /不沿用此图的动作/);
+  assert.match(chinese, /一张横向三视图拼图/);
   assert.doesNotMatch(chinese, /最终输出只有一张连续画面|禁止多面板|仅采用此图当前展示的动作/);
   const english = views.threeViewPrompt(references, 'en');
   assert.match(english, /FRONT.*LEFT PROFILE.*BACK/);
   assert.match(english, /head-to-sole/);
   assert.match(english, /same person/);
+});
+
+test('three-view prompts require hyperrealistic materials and do not inherit reference art styles', () => {
+  const chinese = views.threeViewPrompt(references, 'zh');
+  assert.match(chinese, /超写实、摄影级真实感/);
+  for (const detail of [
+    '皮肤微纹理',
+    '真实发丝',
+    '织物纤维与缝线',
+    '皮革纹理',
+    '金属反射',
+    '柔和漫射棚光',
+    '全身清晰',
+  ])
+    assert.ok(chinese.includes(detail), detail);
+  assert.match(chinese, /不复制原图的动作、裁切或画风/);
+  assert.match(chinese, /不继承插画画风/);
+  assert.match(chinese, /不得输出动漫、卡通、插画/);
+  assert.doesNotMatch(chinese, /体型与画风/);
+  const english = views.threeViewPrompt(references, 'en');
+  for (const detail of [
+    'hyperrealistic',
+    'photographic-quality',
+    'skin microtexture',
+    'hair strands',
+    'fabric fibers',
+    'leather grain',
+    'diffuse studio lighting',
+    'full body in focus',
+  ])
+    assert.ok(english.includes(detail), detail);
+  assert.match(english, /not the source pose, crop or art style/);
+  assert.match(english, /No anime, cartoon, illustration/);
+  assert.doesNotMatch(english, /build and style/);
+});
+
+test('fixed three-view style covers supplemental, custom and legacy prompts without enabling empty drafts', () => {
+  for (const lang of ['zh', 'en']) {
+    for (const draft of [
+      views.threeViewPrompt(references, lang),
+      views.threeViewPrompt(references, lang) + '\nAnime style',
+      'Custom cartoon prompt',
+      'Legacy illustration prompt',
+    ]) {
+      const enforced = views.enforceThreeViewStyle(draft, lang);
+      assert.ok(enforced.startsWith(draft));
+      assert.match(
+        enforced,
+        lang === 'zh'
+          ? /三视图最终风格固定为超写实摄影级效果/
+          : /final three-view output must use a hyperrealistic/,
+      );
+      assert.match(
+        enforced,
+        lang === 'zh' ? /优先于参考图原画风/ : /overrides conflicting reference art styles/,
+      );
+      assert.equal(views.enforceThreeViewStyle(enforced, lang), enforced);
+      assert.equal(views.enforceThreeViewStyle(enforced + '  \n', lang), enforced);
+    }
+    for (const empty of ['', '  \n']) assert.equal(views.enforceThreeViewStyle(empty, lang), empty);
+  }
 });
 
 test('crop validation handles boundaries, floating thirds, small images, missing and invalid numbers', () => {
@@ -132,6 +194,17 @@ test('three-view studio and old single-image results render without browser or 3
     assert.match(select, /1536x864/);
     assert.equal(select.includes('864x1536'), !threeView);
     assert.equal(html.includes('确认三张建模参考图'), threeView);
+    const styles = html.match(/<div class="studio-styles">(.*?)<\/div>/)?.[1];
+    assert.ok(styles);
+    assert.equal((styles.match(/<button/g) || []).length, threeView ? 1 : 4);
+    if (threeView) {
+      assert.match(styles, /aria-pressed="true" disabled=""/);
+      assert.match(styles, /超写实（固定）/);
+      assert.match(html, /补充或自定义提示词不改变固定风格/);
+    } else {
+      assert.doesNotMatch(styles, /超写实（固定）/);
+      assert.doesNotMatch(html, /studio-three-view-style-hint/);
+    }
     assert.doesNotMatch(html, /<model-viewer/);
     assert.match(html, /studio-canvas/);
   }

@@ -1,9 +1,12 @@
 export const threeViewCopy = {
   zh: {
     enable: '生成三视图（正面／侧面／背面）',
+    hyperreal: '超写实（固定）',
+    styleHint: '三视图提交时始终附加超写实约束，补充或自定义提示词不改变固定风格。',
     modeHint:
-      '仅保留 16:9 和 3:2；三视图统一使用直立参考姿势。勾选不自动发起 3D 建模，图片生成仍消耗生图额度。',
-    emptyHint: '选择服饰，可选人物参考，生成正面／侧面／背面三视图；姿势参考不是必选。',
+      '仅保留 16:9 和 3:2；固定超写实风格、直立参考姿势，不继承动漫或插画画风。勾选不自动发起 3D 建模，图片生成仍消耗生图额度。',
+    emptyHint:
+      '选择服饰，可选人物参考，生成一张正面／侧面／背面的超写实三视图拼图；姿势参考不是必选。',
     loadingSheet: '正在读取三视图…',
     reconnect: '重试连接（原任务）',
     newTask: '重新生成 3D（新任务）',
@@ -101,10 +104,13 @@ export const threeViewCopy = {
   },
   en: {
     enable: 'Generate three views (front / side / back)',
+    hyperreal: 'Hyperrealistic (fixed)',
+    styleHint:
+      'A fixed hyperrealistic requirement is always appended on submission, including supplemental or custom prompts.',
     modeHint:
-      'Only 16:9 and 3:2 are available. Uses a neutral upright stance. The checkbox does not start 3D modeling; image generation still uses image credits.',
+      'Only 16:9 and 3:2 are available. Uses a fixed hyperrealistic style and neutral upright stance, not reference anime or illustration styles. The checkbox does not start 3D modeling; image generation still uses image credits.',
     emptyHint:
-      'Choose an outfit and optional character to generate front / side / back views. A pose reference is optional.',
+      'Choose an outfit and optional character to generate one hyperrealistic front / side / back reference sheet. A pose reference is optional.',
     loadingSheet: 'Reading the reference sheet…',
     reconnect: 'Reconnect to same task',
     newTask: 'Generate again (new task)',
