@@ -2,6 +2,7 @@ import { createHash, randomBytes, randomUUID, timingSafeEqual } from 'node:crypt
 import { createServer } from 'node:http';
 import sharp from 'sharp';
 import imageSizes from './image-sizes.json' with { type: 'json' };
+import { createModelJobService } from './model-jobs.mjs';
 
 const PORT = Number(process.env.PORT || 8788);
 const MAX_REQUEST_BYTES = 32 * 1024 * 1024;
@@ -27,6 +28,7 @@ const REFERENCE_HOSTS = new Set(
 );
 
 const jobs = new Map();
+const modelJobs = createModelJobService();
 const queue = [];
 let activeJobs = 0;
 
@@ -394,6 +396,7 @@ function jobRoute(request, response, id) {
 const server = createServer(async (request, response) => {
   try {
     const url = new URL(request.url || '/', 'http://localhost');
+    if (await modelJobs.handle(request, response, url)) return;
     if (request.method === 'GET' && ['/healthz', '/api/healthz'].includes(url.pathname))
       return json(response, 200, { ok: true, queue: queue.length, active: activeJobs });
     if (request.method === 'POST' && url.pathname === '/api/jobs')
@@ -422,4 +425,7 @@ setInterval(() => {
 }, 60_000).unref();
 
 for (const signal of ['SIGTERM', 'SIGINT'])
-  process.on(signal, () => server.close(() => process.exit(0)));
+  process.on(signal, () => {
+    modelJobs.close();
+    server.close(() => process.exit(0));
+  });

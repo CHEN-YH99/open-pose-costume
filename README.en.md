@@ -156,6 +156,14 @@ These are example outputs. Results depend on the model, description and service 
 
 [open-pose-costume-skill](https://github.com/hongye007/open-pose-costume-skill) combines pose, costume and character references into one character image through natural-language requests in Codex. Browse and select references on this website, then use the skill to generate a character. See the skill repository's bilingual README for installation, examples and image service configuration.
 
+## Three views and 3D preview
+
+Enable “Generate three views” in the studio to create a horizontal front / side / back reference sheet. Only `16:9` and `3:2` are available; disabling the option restores the ordinary mode's ratio. The preview stays in a fixed square frame and contains the complete image.
+
+Adjust and confirm three crops before separately requesting a model from the backend-configured Hunyuan or Tripo provider. The checkbox alone never starts paid modeling. Preview GLB models with mouse/touch rotation, zoom, auto-rotation and camera reset, or download them. Import a self-contained GLB to test the viewer without API charges.
+
+Modeling requires a separately configured Node backend and provider credits. Hunyuan / Tripo keys remain on the backend; GitHub Pages and the existing image Worker do not run modeling jobs. See [the workflow, configuration and safety limits](docs/three-view-3d.md). AI-inferred models require manual quality review and are not exact reconstructions.
+
 ## Run locally
 
 Requires **Node.js 22.12+**.
