@@ -1,6 +1,7 @@
 import { downloadFilename } from './download-filename';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { CSSProperties } from 'react';
+import { flushSync } from 'react-dom';
 import {
   ArrowDown,
   ArrowRight,
@@ -23,6 +24,8 @@ import {
   Plus,
   RotateCcw,
   Search,
+  Sun,
+  Moon,
   Shirt,
   Sparkles,
   UserRound,
@@ -134,6 +137,108 @@ function IntroTypewriter({ lang }: { lang: Lang }) {
         <span aria-hidden="true">{description}</span>
       </p>
     </>
+  );
+}
+
+type Theme = 'light' | 'dark';
+
+function ThemeToggle({ lang }: { lang: Lang }) {
+  const [theme, setTheme] = useState<Theme>(() =>
+    document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light',
+  );
+  const currentTheme = useRef(theme);
+  const transitionRef = useRef<ViewTransition | null>(null);
+  const fallbackTimer = useRef<number | undefined>(undefined);
+  const t = copy[lang];
+
+  useEffect(
+    () => () => {
+      transitionRef.current?.skipTransition();
+      window.clearTimeout(fallbackTimer.current);
+      delete document.documentElement.dataset.themeTransition;
+    },
+    [],
+  );
+
+  const toggleTheme = (button: HTMLButtonElement) => {
+    const root = document.documentElement;
+    const next: Theme = currentTheme.current === 'dark' ? 'light' : 'dark';
+    currentTheme.current = next;
+    transitionRef.current?.skipTransition();
+    window.clearTimeout(fallbackTimer.current);
+    const apply = () => {
+      root.dataset.theme = next;
+      root.style.colorScheme = next;
+      root.style.backgroundColor = next === 'dark' ? '#0f1726' : '#f5f7fb';
+      document
+        .querySelector('meta[name="theme-color"]')
+        ?.setAttribute('content', next === 'dark' ? '#0f1726' : '#245bdb');
+      storageSet('opc-theme', next);
+      flushSync(() => setTheme(next));
+    };
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      transitionRef.current = null;
+      delete root.dataset.themeTransition;
+      apply();
+      return;
+    }
+    if (typeof document.startViewTransition !== 'function') {
+      root.dataset.themeTransition = 'fallback';
+      apply();
+      fallbackTimer.current = window.setTimeout(() => {
+        delete root.dataset.themeTransition;
+      }, 240);
+      return;
+    }
+    const rect = button.getBoundingClientRect();
+    const x = rect.left + rect.width / 2;
+    const y = rect.top + rect.height / 2;
+    const radius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
+    root.dataset.themeTransition = 'active';
+    const transition = document.startViewTransition(apply);
+    transitionRef.current = transition;
+    void transition.ready
+      .then(() => {
+        if (transitionRef.current !== transition) return;
+        return root.animate(
+          {
+            clipPath: [
+              'circle(0px at ' + x + 'px ' + y + 'px)',
+              'circle(' + radius + 'px at ' + x + 'px ' + y + 'px)',
+            ],
+          },
+          {
+            duration: 500,
+            easing: 'cubic-bezier(0.23, 1, 0.32, 1)',
+            pseudoElement: '::view-transition-new(root)',
+          },
+        ).finished;
+      })
+      .catch(() => {
+        /* A newer toggle or background tab can skip the snapshot animation. */
+      });
+    void transition.finished
+      .finally(() => {
+        if (transitionRef.current === transition) {
+          transitionRef.current = null;
+          delete root.dataset.themeTransition;
+        }
+      })
+      .catch(() => {});
+  };
+
+  return (
+    <button
+      type="button"
+      className="theme-toggle"
+      data-theme={theme}
+      aria-label={theme === 'dark' ? t.lightTheme : t.darkTheme}
+      title={theme === 'dark' ? t.lightTheme : t.darkTheme}
+      onClick={(event) => toggleTheme(event.currentTarget)}
+    >
+      <Sun className="theme-icon theme-icon-sun" size={18} aria-hidden="true" />
+      <Moon className="theme-icon theme-icon-moon" size={18} aria-hidden="true" />
+    </button>
   );
 }
 
@@ -1069,6 +1174,7 @@ export default function App() {
               <span className="language-slash">/</span>
               <span className={lang === 'en' ? 'current-language' : ''}>EN</span>
             </button>
+            <ThemeToggle lang={lang} />
             <span className="studio-badge">
               REFERENCE STUDIO
               <span />
