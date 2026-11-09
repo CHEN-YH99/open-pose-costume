@@ -1,5 +1,6 @@
 import { downloadFilename } from './download-filename';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import type { CSSProperties } from 'react';
 import {
   ArrowDown,
   ArrowRight,
@@ -84,6 +85,57 @@ const isBoard = (v: unknown): v is Board =>
     (k) => !(k in v) || typeof (v as Record<string, unknown>)[k] === 'string',
   );
 const viewParam = initialParams.get('view');
+
+function IntroTypewriter({ lang }: { lang: Lang }) {
+  const t = copy[lang];
+  let delay = 160;
+  const typeText = (text: string) =>
+    Array.from(text).map((character, index) => {
+      const step = /[，。,.!?！？]/u.test(character)
+        ? lang === 'zh'
+          ? 160
+          : 80
+        : lang === 'zh'
+          ? 80
+          : 30;
+      const style = {
+        '--typing-delay': delay + 'ms',
+        '--typing-step': step + 'ms',
+      } as CSSProperties;
+      delay += step;
+      return (
+        <span className="intro-typewriter-character" key={index} style={style}>
+          {character}
+        </span>
+      );
+    });
+  const titleStart = typeText(t.introA);
+  const titleEnd = typeText(t.introB);
+  delay += 160;
+  const description = typeText(t.introText);
+
+  // Keep the full text in the layout and accessibility tree throughout playback.
+  return (
+    <>
+      <h1>
+        <span className="intro-typewriter-accessible">
+          {t.introA}
+          {lang === 'en' ? ' ' : ''}
+          {t.introB}
+        </span>
+        <span aria-hidden="true">
+          {titleStart}
+          <br />
+          <em>{titleEnd}</em>
+        </span>
+      </h1>
+      <p className="intro-description">
+        <span className="intro-typewriter-accessible">{t.introText}</span>
+        <span aria-hidden="true">{description}</span>
+      </p>
+    </>
+  );
+}
 
 export default function App() {
   const [lang, setLang] = useState<Lang>(() => {
@@ -197,9 +249,7 @@ export default function App() {
   useEffect(() => {
     document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
     document.title =
-      lang === 'zh'
-        ? 'Open Pose & Costume · 姿势与服装参考库'
-        : 'Open Pose & Costume · Reference studio';
+      lang === 'zh' ? 'Origin Pose · 姿势与服装参考库' : 'Origin Pose · Reference studio';
     storageSet('opc-language', lang);
   }, [lang]);
   useEffect(() => {
@@ -838,16 +888,14 @@ export default function App() {
         >
           <span className="brand-mark">
             <img
-              src={`${import.meta.env.BASE_URL}brand/logo-mark.png`}
+              src={`${import.meta.env.BASE_URL}brand/logo-mark.png?v=op-20261109`}
               alt=""
               width={44}
               height={44}
             />
           </span>
           <span>
-            <strong>
-              open<span className="brand-dot">.</span>
-            </strong>
+            <strong>Origin Pose</strong>
             <span className="brand-sub">POSE & COSTUME</span>
           </span>
         </a>
@@ -979,8 +1027,8 @@ export default function App() {
             }}
             aria-label={t.projectHome}
           >
-            <img src={`${import.meta.env.BASE_URL}brand/logo-mark.png`} alt="" />
-            <strong>open-pose-costume</strong>
+            <img src={`${import.meta.env.BASE_URL}brand/logo-mark.png?v=op-20261109`} alt="" />
+            <strong>Origin Pose</strong>
           </button>
           <div className="header-actions">
             <button
@@ -1036,12 +1084,7 @@ export default function App() {
                   <span />
                   {t.introLabel}
                 </p>
-                <h1>
-                  {t.introA}
-                  <br />
-                  <em>{t.introB}</em>
-                </h1>
-                <p className="intro-description">{t.introText}</p>
+                <IntroTypewriter key={lang} lang={lang} />
                 <a className="intro-link" href="#collection">
                   {t.introLink}
                   <ArrowDown size={15} />

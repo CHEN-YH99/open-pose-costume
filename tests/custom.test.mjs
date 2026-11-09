@@ -367,3 +367,176 @@ test('generation and ZIP download fetch the custom original, without sending the
     );
   }
 });
+
+test('homepage male references match the selected catalog images without screenshot chrome', async () => {
+  const references = {
+    pose: 'custom_pose_male_streetwear_20261104',
+    costume: 'custom_costume_menswear_20261103_03',
+    character: 'custom_character_male_002',
+  };
+  for (const [kind, id] of Object.entries(references)) {
+    const item = custom.find((entry) => entry.id === id);
+    assert.ok(item, id);
+    assert.equal(item.kind, kind);
+    assert.ok(item.tags.some((tag) => tag.id === 'male'));
+    const hero = await readFile(
+      new URL('../public/images/hero/' + kind + '.webp', import.meta.url),
+    );
+    const source = await readFile(new URL('../public/' + item.variants[0].image, import.meta.url));
+    assert.deepEqual(hero, source, kind + ' must use the existing clean project image');
+  }
+});
+
+test('homepage shows the supplied generated result instead of the pending portrait', async () => {
+  const { createElement } = await import('react');
+  const { renderToStaticMarkup } = await import('react-dom/server');
+  const { HeroStudy } = await vite.ssrLoadModule('/src/hero-study.tsx');
+  for (const [lang, title, example, pending] of [
+    ['zh', '生成结果', '生成示例', '男生组合效果待生成'],
+    ['en', 'Generated result', 'Example output', 'Combined male example pending'],
+  ]) {
+    const html = renderToStaticMarkup(createElement(HeroStudy, { lang }));
+    assert.ok(html.includes(title));
+    assert.ok(html.includes(example));
+    assert.ok(!html.includes(pending));
+    assert.ok(html.includes('v=male-20261109'));
+    assert.ok(html.includes('images/hero/result.webp?v=male-result-20261109'));
+    assert.ok(html.includes('width="941" height="1672"'));
+    assert.equal((html.match(/<img /g) || []).length, 4);
+  }
+});
+
+test('hero image viewer fits portrait and landscape images without changing aspect ratio', async () => {
+  const { fitImageToViewport } = await vite.ssrLoadModule('/src/hero-study.tsx');
+  for (const image of [
+    { width: 941, height: 1672 },
+    { width: 2400, height: 800 },
+    { width: 100, height: 100 },
+  ]) {
+    for (const viewport of [
+      { width: 1388, height: 704 },
+      { width: 358, height: 580 },
+      { width: 700, height: 180 },
+    ]) {
+      const fit = fitImageToViewport(image, viewport);
+      assert.ok(image.width * fit <= viewport.width - 24 + 1e-8);
+      assert.ok(image.height * fit <= viewport.height - 24 + 1e-8);
+      assert.ok(
+        Math.abs((image.width * fit) / (image.height * fit) - image.width / image.height) < 1e-8,
+      );
+      assert.ok(
+        Math.abs(image.width * fit - (viewport.width - 24)) < 1e-8 ||
+          Math.abs(image.height * fit - (viewport.height - 24)) < 1e-8,
+      );
+    }
+  }
+  assert.equal(fitImageToViewport({ width: 0, height: 0 }, { width: 100, height: 100 }), 0);
+  assert.equal(fitImageToViewport({ width: 100, height: 100 }, { width: 0, height: 0 }), 0);
+  assert.equal(fitImageToViewport({ width: 100, height: 100 }, { width: 10, height: 10 }), 0);
+});
+
+test('hero image viewer anchors wheel zoom to the pointer and clamps scale', async () => {
+  const { zoomImageView } = await vite.ssrLoadModule('/src/hero-study.tsx');
+  const size = { width: 1000, height: 1000 };
+  const viewport = { width: 600, height: 600 };
+  const initial = { zoom: 2, x: 30, y: -20 };
+  const anchor = { x: 90, y: 50 };
+  const zoomed = zoomImageView(initial, 3, anchor, size, viewport);
+  assert.equal((anchor.x - initial.x) / initial.zoom, (anchor.x - zoomed.x) / zoomed.zoom);
+  assert.equal((anchor.y - initial.y) / initial.zoom, (anchor.y - zoomed.y) / zoomed.zoom);
+  assert.equal(zoomImageView(initial, 100, anchor, size, viewport).zoom, 8);
+  assert.deepEqual(zoomImageView(initial, 0.01, anchor, size, viewport), {
+    zoom: 0.25,
+    x: 0,
+    y: 0,
+  });
+});
+
+test('hero image viewer keeps fitted images centered and bounds dragging at zoomed edges', async () => {
+  const { constrainImageView } = await vite.ssrLoadModule('/src/hero-study.tsx');
+  const size = { width: 1000, height: 1000 };
+  const viewport = { width: 600, height: 600 };
+  assert.deepEqual(constrainImageView({ zoom: 1, x: 1000, y: -1000 }, size, viewport), {
+    zoom: 1,
+    x: 0,
+    y: 0,
+  });
+  assert.deepEqual(constrainImageView({ zoom: 2, x: 1000, y: -1000 }, size, viewport), {
+    zoom: 2,
+    x: 288,
+    y: -288,
+  });
+});
+
+test('hero image viewer exposes bilingual zoom controls and keyboard guidance', async () => {
+  const { createElement } = await import('react');
+  const { renderToStaticMarkup } = await import('react-dom/server');
+  const { HeroImageViewer } = await vite.ssrLoadModule('/src/hero-study.tsx');
+  for (const [lang, fit, close, hint] of [
+    ['zh', '适应窗口', '关闭图片查看器', '滚轮缩放'],
+    ['en', 'Fit to window', 'Close image viewer', 'Scroll to zoom'],
+  ]) {
+    const html = renderToStaticMarkup(
+      createElement(HeroImageViewer, {
+        src: '/images/hero/result.webp',
+        title: 'Result',
+        lang,
+        onClose() {},
+      }),
+    );
+    assert.ok(html.includes(fit));
+    assert.ok(html.includes(close));
+    assert.ok(html.includes(hint));
+    assert.ok(html.includes('100%'));
+    assert.ok(html.includes('draggable="false"'));
+    assert.ok(html.includes('tabindex="0"'));
+    assert.ok(html.includes('role="region"'));
+    assert.ok(html.includes('hero-viewer-stage'));
+  }
+});
+
+test('hero background is decorative, pausable, and preserves the four image controls', async () => {
+  const { createElement } = await import('react');
+  const { renderToStaticMarkup } = await import('react-dom/server');
+  const { HeroStudy } = await vite.ssrLoadModule('/src/hero-study.tsx');
+  for (const [lang, pause] of [
+    ['zh', '暂停背景动画'],
+    ['en', 'Pause background animation'],
+  ]) {
+    const html = renderToStaticMarkup(createElement(HeroStudy, { lang }));
+    assert.match(html, /class="hero-study-backdrop" aria-hidden="true"/);
+    assert.match(html, /data-motion="paused"/);
+    assert.match(html, /focusable="false"/);
+    assert.ok(html.includes('aria-label="' + pause + '"'));
+    for (const kind of ['pose', 'costume', 'character']) {
+      assert.ok(html.includes('hero-flow-particle-' + kind));
+    }
+    assert.equal((html.match(/<img /g) || []).length, 4);
+    assert.equal((html.match(/class="hero-input"/g) || []).length, 3);
+    assert.equal((html.match(/class="hero-result"/g) || []).length, 1);
+  }
+});
+
+test('hero flow splits above and below each card then rejoins at its right midpoint', async () => {
+  const { heroFlowRoute } = await vite.ssrLoadModule('/src/hero-study.tsx');
+  for (const card of [
+    { x: 18, y: 60, width: 202, height: 74 },
+    { x: 16, y: 156, width: 102, height: 80 },
+  ]) {
+    const targetX = card.x + card.width + 24;
+    const upper = heroFlowRoute(card, targetX, 'upper');
+    const lower = heroFlowRoute(card, targetX, 'lower');
+    const center = card.y + card.height / 2;
+    for (const route of [upper, lower]) {
+      assert.ok(route.path.startsWith('M0 ' + center + 'H' + (card.x - 3)));
+      assert.ok(route.path.endsWith('V' + center + 'H' + targetX));
+      assert.equal(route.right, card.x + card.width + 3);
+      assert.equal(route.center, center);
+      assert.equal(route.entryLength, card.x - 3);
+      assert.equal(route.exitLength, 21);
+    }
+    assert.ok(upper.path.includes('Q' + (card.x - 3) + ' ' + (card.y - 3)));
+    assert.ok(lower.path.includes('Q' + (card.x - 3) + ' ' + (card.y + card.height + 3)));
+    assert.notEqual(upper.path, lower.path);
+  }
+});
