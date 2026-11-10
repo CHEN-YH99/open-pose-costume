@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { unzipSync } from 'fflate';
+import sharp from 'sharp';
 import { createServer } from 'vite';
 import { readJson } from '../scripts/build-data.mjs';
 import { loadCustomReferences } from '../scripts/custom-data.mjs';
@@ -43,9 +44,11 @@ test('custom manifests merge independently, with original hashes and separate co
         createHash('sha256').update(original).digest('hex'),
         variant.provenance?.originalSha256 || item.provenance.originalSha256,
       );
-      assert.equal(original.subarray(1, 4).toString(), 'PNG');
-      assert.equal(original.readUInt32BE(16), variant.provenance?.width || 1024);
-      assert.equal(original.readUInt32BE(20), variant.provenance?.height || 1536);
+      const metadata = await sharp(original).metadata();
+      const extension = variant.original.split('.').at(-1);
+      assert.equal(metadata.format, { png: 'png', jpg: 'jpeg', webp: 'webp' }[extension]);
+      assert.equal(metadata.width, variant.provenance?.width || 1024);
+      assert.equal(metadata.height, variant.provenance?.height || 1536);
       assert.equal(image.toString('ascii', 8, 12), 'WEBP');
       assert.equal(thumb.toString('ascii', 8, 12), 'WEBP');
       assert.ok(thumb.length < image.length);
@@ -75,6 +78,50 @@ test('custom manifests merge independently, with original hashes and separate co
     }
   }
 });
+
+for (const batch of [
+  { id: 'user-outfits-20261110', format: 'webp', start: 72, count: 26, female: 16, male: 10 },
+  { id: 'user-outfits-20261110-02', format: 'png', start: 98, count: 9, female: 0, male: 9 },
+  { id: 'user-outfits-20261110-03', format: 'png', start: 107, count: 17, female: 0, male: 17 },
+]) {
+  test(batch.id + ' retains originals, complete image sets and searchable labels', async () => {
+    const imported = custom.filter((item) => item.provenance.batch === batch.id);
+    assert.deepEqual(
+      imported.map((item) => item.id),
+      Array.from(
+        { length: batch.count },
+        (_, index) => 'custom_costume_street_' + String(index + batch.start).padStart(3, '0'),
+      ),
+    );
+    for (const gender of ['female', 'male']) {
+      assert.equal(
+        imported.filter((item) => item.tags.some((tag) => tag.id === gender)).length,
+        batch[gender],
+      );
+    }
+    for (const item of imported) {
+      assert.equal(item.variants.length, 1);
+      assert.ok(matchesQuery(item, item.title.zh));
+      assert.ok(matchesQuery(item, item.title.en));
+      const variant = item.variants[0];
+      for (const [key, folder, width, height] of [
+        ['original', 'originals', 1024, 1536],
+        ['image', 'images', 768, 1152],
+        ['thumbnail', 'thumbnails', 256, 384],
+      ]) {
+        const format = key === 'original' ? batch.format : 'webp';
+        assert.equal(variant[key], 'custom/costume/' + folder + '/' + item.id + '.' + format);
+        const bytes = await readFile(new URL('../public/' + variant[key], import.meta.url));
+        const metadata = await sharp(bytes).metadata();
+        assert.equal(metadata.format, format);
+        assert.equal(metadata.width, width);
+        assert.equal(metadata.height, height);
+        assert.equal(metadata.width / metadata.height, 2 / 3);
+        await sharp(bytes).raw().toBuffer();
+      }
+    }
+  });
+}
 
 test('custom and anime filters intersect with categories and bilingual search', () => {
   for (const query of ['动漫', 'Anime', '自建扩展', 'custom'])
@@ -115,13 +162,13 @@ test('regional portraits expose the active fictional identities through bilingua
   }
 });
 
-test('male references expose original five-view poses and eleven outfits through bilingual filters', () => {
+test('male references expose original five-view poses and forty-seven outfits through bilingual filters', () => {
   const male = custom.filter((item) => matchesExtension(item, 'custom', 'male'));
   const allPoses = male.filter((item) => item.kind === 'pose');
   const poses = allPoses;
   const outfits = male.filter((item) => item.kind === 'costume');
   assert.equal(poses.length, 22);
-  assert.equal(outfits.length, 11);
+  assert.equal(outfits.length, 47);
   assert.equal(
     poses.reduce((n, item) => n + item.variants.length, 0),
     110,

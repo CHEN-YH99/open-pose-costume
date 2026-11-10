@@ -57,9 +57,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "original": "custom/costume/originals/custom_costume_male_007.png",
-        "image": "custom/costume/images/custom_costume_male_007.webp",
-        "thumbnail": "custom/costume/thumbnails/custom_costume_male_007.webp",
+        "original": "custom/costume/originals/custom_costume_street_066.png",
+        "image": "custom/costume/images/custom_costume_street_066.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_066.webp",
         "provenance": {
           "originalSha256": "f4a13e244559036c83c32f6c592b1b79fad19e45e2f2606c78fdb9c0d618f4ba",
           "width": 1024,
@@ -333,9 +333,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "original": "custom/costume/originals/custom_costume_male_006.png",
-        "image": "custom/costume/images/custom_costume_male_006.webp",
-        "thumbnail": "custom/costume/thumbnails/custom_costume_male_006.webp",
+        "original": "custom/costume/originals/custom_costume_street_065.png",
+        "image": "custom/costume/images/custom_costume_street_065.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_065.webp",
         "provenance": {
           "originalSha256": "16d59dc34d2bd38c6adcac474cd3caa01a203a591b2bd39211c0592f57fedb91",
           "width": 1024,
@@ -1117,9 +1117,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "original": "custom/costume/originals/custom_costume_male_005.png",
-        "image": "custom/costume/images/custom_costume_male_005.webp",
-        "thumbnail": "custom/costume/thumbnails/custom_costume_male_005.webp",
+        "original": "custom/costume/originals/custom_costume_street_064.png",
+        "image": "custom/costume/images/custom_costume_street_064.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_064.webp",
         "provenance": {
           "batch": "male-streetwear-20261104",
           "provider": "Atomflow",
@@ -1187,9 +1187,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "original": "custom/costume/originals/custom_costume_menswear_20261103_01.png",
-        "image": "custom/costume/images/custom_costume_menswear_20261103_01.webp",
-        "thumbnail": "custom/costume/thumbnails/custom_costume_menswear_20261103_01.webp",
+        "original": "custom/costume/originals/custom_costume_street_067.png",
+        "image": "custom/costume/images/custom_costume_street_067.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_067.webp",
         "provenance": {
           "originalSha256": "c3dde6330d4f01847ba4a431bd5856ff1e2fd80ada15773ba0c800b210b66baa",
           "width": 1024,
@@ -1252,9 +1252,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "original": "custom/costume/originals/custom_costume_menswear_20261103_02.png",
-        "image": "custom/costume/images/custom_costume_menswear_20261103_02.webp",
-        "thumbnail": "custom/costume/thumbnails/custom_costume_menswear_20261103_02.webp",
+        "original": "custom/costume/originals/custom_costume_street_068.png",
+        "image": "custom/costume/images/custom_costume_street_068.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_068.webp",
         "provenance": {
           "originalSha256": "d73f26f8a5c2e3cbc5f670a1e5db4882a05b752955118cebd39f3301cf78d2dc",
           "width": 1024,
@@ -1317,9 +1317,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "original": "custom/costume/originals/custom_costume_menswear_20261103_03.png",
-        "image": "custom/costume/images/custom_costume_menswear_20261103_03.webp",
-        "thumbnail": "custom/costume/thumbnails/custom_costume_menswear_20261103_03.webp",
+        "original": "custom/costume/originals/custom_costume_street_069.png",
+        "image": "custom/costume/images/custom_costume_street_069.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_069.webp",
         "provenance": {
           "originalSha256": "382ada9e7678fde3536735607890ebefa5a0456109d25bd025b649ba15660b3d",
           "width": 1024,
@@ -1382,9 +1382,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "original": "custom/costume/originals/custom_costume_menswear_20261103_04.png",
-        "image": "custom/costume/images/custom_costume_menswear_20261103_04.webp",
-        "thumbnail": "custom/costume/thumbnails/custom_costume_menswear_20261103_04.webp",
+        "original": "custom/costume/originals/custom_costume_street_070.png",
+        "image": "custom/costume/images/custom_costume_street_070.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_070.webp",
         "provenance": {
           "originalSha256": "16960c049697d175f81ad72640c0591724c4bfca987367f07864af576217a16d",
           "width": 1024,
@@ -1704,9 +1704,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_001.webp",
-        "image": "custom/costume/images/custom_costume_001.webp",
-        "original": "custom/costume/originals/custom_costume_001.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_030.webp",
+        "image": "custom/costume/images/custom_costume_street_030.webp",
+        "original": "custom/costume/originals/custom_costume_street_030.png"
       }
     ]
   },
@@ -1761,9 +1761,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_002.webp",
-        "image": "custom/costume/images/custom_costume_002.webp",
-        "original": "custom/costume/originals/custom_costume_002.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_031.webp",
+        "image": "custom/costume/images/custom_costume_street_031.webp",
+        "original": "custom/costume/originals/custom_costume_street_031.png"
       }
     ]
   },
@@ -1818,9 +1818,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_003.webp",
-        "image": "custom/costume/images/custom_costume_003.webp",
-        "original": "custom/costume/originals/custom_costume_003.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_032.webp",
+        "image": "custom/costume/images/custom_costume_street_032.webp",
+        "original": "custom/costume/originals/custom_costume_street_032.png"
       }
     ]
   },
@@ -1875,9 +1875,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_004.webp",
-        "image": "custom/costume/images/custom_costume_004.webp",
-        "original": "custom/costume/originals/custom_costume_004.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_033.webp",
+        "image": "custom/costume/images/custom_costume_street_033.webp",
+        "original": "custom/costume/originals/custom_costume_street_033.png"
       }
     ]
   },
@@ -1932,9 +1932,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_005.webp",
-        "image": "custom/costume/images/custom_costume_005.webp",
-        "original": "custom/costume/originals/custom_costume_005.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_034.webp",
+        "image": "custom/costume/images/custom_costume_street_034.webp",
+        "original": "custom/costume/originals/custom_costume_street_034.png"
       }
     ]
   },
@@ -1989,9 +1989,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_006.webp",
-        "image": "custom/costume/images/custom_costume_006.webp",
-        "original": "custom/costume/originals/custom_costume_006.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_035.webp",
+        "image": "custom/costume/images/custom_costume_street_035.webp",
+        "original": "custom/costume/originals/custom_costume_street_035.png"
       }
     ]
   },
@@ -2046,9 +2046,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_007.webp",
-        "image": "custom/costume/images/custom_costume_007.webp",
-        "original": "custom/costume/originals/custom_costume_007.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_036.webp",
+        "image": "custom/costume/images/custom_costume_street_036.webp",
+        "original": "custom/costume/originals/custom_costume_street_036.png"
       }
     ]
   },
@@ -2103,9 +2103,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_008.webp",
-        "image": "custom/costume/images/custom_costume_008.webp",
-        "original": "custom/costume/originals/custom_costume_008.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_037.webp",
+        "image": "custom/costume/images/custom_costume_street_037.webp",
+        "original": "custom/costume/originals/custom_costume_street_037.png"
       }
     ]
   },
@@ -2160,9 +2160,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_009.webp",
-        "image": "custom/costume/images/custom_costume_009.webp",
-        "original": "custom/costume/originals/custom_costume_009.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_038.webp",
+        "image": "custom/costume/images/custom_costume_street_038.webp",
+        "original": "custom/costume/originals/custom_costume_street_038.png"
       }
     ]
   },
@@ -2217,9 +2217,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_010.webp",
-        "image": "custom/costume/images/custom_costume_010.webp",
-        "original": "custom/costume/originals/custom_costume_010.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_039.webp",
+        "image": "custom/costume/images/custom_costume_street_039.webp",
+        "original": "custom/costume/originals/custom_costume_street_039.png"
       }
     ]
   },
@@ -2274,9 +2274,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_011.webp",
-        "image": "custom/costume/images/custom_costume_011.webp",
-        "original": "custom/costume/originals/custom_costume_011.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_040.webp",
+        "image": "custom/costume/images/custom_costume_street_040.webp",
+        "original": "custom/costume/originals/custom_costume_street_040.png"
       }
     ]
   },
@@ -2331,9 +2331,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_012.webp",
-        "image": "custom/costume/images/custom_costume_012.webp",
-        "original": "custom/costume/originals/custom_costume_012.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_041.webp",
+        "image": "custom/costume/images/custom_costume_street_041.webp",
+        "original": "custom/costume/originals/custom_costume_street_041.png"
       }
     ]
   },
@@ -2388,9 +2388,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_013.webp",
-        "image": "custom/costume/images/custom_costume_013.webp",
-        "original": "custom/costume/originals/custom_costume_013.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_042.webp",
+        "image": "custom/costume/images/custom_costume_street_042.webp",
+        "original": "custom/costume/originals/custom_costume_street_042.png"
       }
     ]
   },
@@ -2445,9 +2445,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_014.webp",
-        "image": "custom/costume/images/custom_costume_014.webp",
-        "original": "custom/costume/originals/custom_costume_014.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_043.webp",
+        "image": "custom/costume/images/custom_costume_street_043.webp",
+        "original": "custom/costume/originals/custom_costume_street_043.png"
       }
     ]
   },
@@ -2502,9 +2502,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_015.webp",
-        "image": "custom/costume/images/custom_costume_015.webp",
-        "original": "custom/costume/originals/custom_costume_015.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_044.webp",
+        "image": "custom/costume/images/custom_costume_street_044.webp",
+        "original": "custom/costume/originals/custom_costume_street_044.png"
       }
     ]
   },
@@ -2559,9 +2559,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_016.webp",
-        "image": "custom/costume/images/custom_costume_016.webp",
-        "original": "custom/costume/originals/custom_costume_016.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_045.webp",
+        "image": "custom/costume/images/custom_costume_street_045.webp",
+        "original": "custom/costume/originals/custom_costume_street_045.png"
       }
     ]
   },
@@ -2616,9 +2616,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_017.webp",
-        "image": "custom/costume/images/custom_costume_017.webp",
-        "original": "custom/costume/originals/custom_costume_017.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_046.webp",
+        "image": "custom/costume/images/custom_costume_street_046.webp",
+        "original": "custom/costume/originals/custom_costume_street_046.png"
       }
     ]
   },
@@ -2673,9 +2673,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_018.webp",
-        "image": "custom/costume/images/custom_costume_018.webp",
-        "original": "custom/costume/originals/custom_costume_018.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_047.webp",
+        "image": "custom/costume/images/custom_costume_street_047.webp",
+        "original": "custom/costume/originals/custom_costume_street_047.png"
       }
     ]
   },
@@ -2730,9 +2730,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_019.webp",
-        "image": "custom/costume/images/custom_costume_019.webp",
-        "original": "custom/costume/originals/custom_costume_019.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_048.webp",
+        "image": "custom/costume/images/custom_costume_street_048.webp",
+        "original": "custom/costume/originals/custom_costume_street_048.png"
       }
     ]
   },
@@ -2787,9 +2787,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_020.webp",
-        "image": "custom/costume/images/custom_costume_020.webp",
-        "original": "custom/costume/originals/custom_costume_020.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_049.webp",
+        "image": "custom/costume/images/custom_costume_street_049.webp",
+        "original": "custom/costume/originals/custom_costume_street_049.png"
       }
     ]
   },
@@ -2844,9 +2844,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_021.webp",
-        "image": "custom/costume/images/custom_costume_021.webp",
-        "original": "custom/costume/originals/custom_costume_021.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_050.webp",
+        "image": "custom/costume/images/custom_costume_street_050.webp",
+        "original": "custom/costume/originals/custom_costume_street_050.png"
       }
     ]
   },
@@ -2901,9 +2901,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_022.webp",
-        "image": "custom/costume/images/custom_costume_022.webp",
-        "original": "custom/costume/originals/custom_costume_022.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_051.webp",
+        "image": "custom/costume/images/custom_costume_street_051.webp",
+        "original": "custom/costume/originals/custom_costume_street_051.png"
       }
     ]
   },
@@ -2958,9 +2958,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_023.webp",
-        "image": "custom/costume/images/custom_costume_023.webp",
-        "original": "custom/costume/originals/custom_costume_023.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_052.webp",
+        "image": "custom/costume/images/custom_costume_street_052.webp",
+        "original": "custom/costume/originals/custom_costume_street_052.png"
       }
     ]
   },
@@ -3015,9 +3015,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_024.webp",
-        "image": "custom/costume/images/custom_costume_024.webp",
-        "original": "custom/costume/originals/custom_costume_024.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_053.webp",
+        "image": "custom/costume/images/custom_costume_street_053.webp",
+        "original": "custom/costume/originals/custom_costume_street_053.png"
       }
     ]
   },
@@ -3072,9 +3072,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_025.webp",
-        "image": "custom/costume/images/custom_costume_025.webp",
-        "original": "custom/costume/originals/custom_costume_025.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_054.webp",
+        "image": "custom/costume/images/custom_costume_street_054.webp",
+        "original": "custom/costume/originals/custom_costume_street_054.png"
       }
     ]
   },
@@ -3129,9 +3129,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_026.webp",
-        "image": "custom/costume/images/custom_costume_026.webp",
-        "original": "custom/costume/originals/custom_costume_026.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_055.webp",
+        "image": "custom/costume/images/custom_costume_street_055.webp",
+        "original": "custom/costume/originals/custom_costume_street_055.png"
       }
     ]
   },
@@ -3186,9 +3186,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_027.webp",
-        "image": "custom/costume/images/custom_costume_027.webp",
-        "original": "custom/costume/originals/custom_costume_027.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_056.webp",
+        "image": "custom/costume/images/custom_costume_street_056.webp",
+        "original": "custom/costume/originals/custom_costume_street_056.png"
       }
     ]
   },
@@ -3243,9 +3243,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_028.webp",
-        "image": "custom/costume/images/custom_costume_028.webp",
-        "original": "custom/costume/originals/custom_costume_028.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_057.webp",
+        "image": "custom/costume/images/custom_costume_street_057.webp",
+        "original": "custom/costume/originals/custom_costume_street_057.png"
       }
     ]
   },
@@ -3300,9 +3300,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_029.webp",
-        "image": "custom/costume/images/custom_costume_029.webp",
-        "original": "custom/costume/originals/custom_costume_029.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_058.webp",
+        "image": "custom/costume/images/custom_costume_street_058.webp",
+        "original": "custom/costume/originals/custom_costume_street_058.png"
       }
     ]
   },
@@ -3357,9 +3357,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_030.webp",
-        "image": "custom/costume/images/custom_costume_030.webp",
-        "original": "custom/costume/originals/custom_costume_030.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_059.webp",
+        "image": "custom/costume/images/custom_costume_street_059.webp",
+        "original": "custom/costume/originals/custom_costume_street_059.png"
       }
     ]
   },
@@ -3414,9 +3414,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "thumbnail": "custom/costume/thumbnails/custom_costume_moon_001.webp",
-        "image": "custom/costume/images/custom_costume_moon_001.webp",
-        "original": "custom/costume/originals/custom_costume_moon_001.png"
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_071.webp",
+        "image": "custom/costume/images/custom_costume_street_071.webp",
+        "original": "custom/costume/originals/custom_costume_street_071.png"
       }
     ]
   },
@@ -3473,9 +3473,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "original": "custom/costume/originals/custom_costume_male_001.png",
-        "image": "custom/costume/images/custom_costume_male_001.webp",
-        "thumbnail": "custom/costume/thumbnails/custom_costume_male_001.webp",
+        "original": "custom/costume/originals/custom_costume_street_060.png",
+        "image": "custom/costume/images/custom_costume_street_060.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_060.webp",
         "provenance": {
           "originalSha256": "b60b92286d5be66d8e0055bcbdb5b55caa375a589fef4fe47e83078744cfe26a",
           "width": 1024,
@@ -3531,7 +3531,10 @@
       "completion": {
         "method": "AI garment completion",
         "sourceSha256": "02ca3d3ad4fc88ec86049b2e167324448eb0fb76c7626f43d5641a5a28e34796",
-        "completedRegions": ["lower trouser legs", "trouser hems"],
+        "completedRegions": [
+          "lower trouser legs",
+          "trouser hems"
+        ],
         "footwearAdded": false,
         "note": {
           "zh": "裤腿与裤脚由 AI 根据可见服饰补全，非原照片中可见的细节。",
@@ -3559,9 +3562,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "original": "custom/costume/originals/custom_costume_male_002.png",
-        "image": "custom/costume/images/custom_costume_male_002.webp",
-        "thumbnail": "custom/costume/thumbnails/custom_costume_male_002.webp",
+        "original": "custom/costume/originals/custom_costume_street_061.png",
+        "image": "custom/costume/images/custom_costume_street_061.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_061.webp",
         "provenance": {
           "originalSha256": "0a0378122815279ed7d747d06dd7863169ebce41d0f7704148101601a4f02f3a",
           "width": 1024,
@@ -3617,7 +3620,10 @@
       "completion": {
         "method": "AI garment completion",
         "sourceSha256": "63222b8a870d7d3c16b2e88b9fe3dcc795ad8956e37b1fc4be9553ebcacae53d",
-        "completedRegions": ["lower trouser legs", "trouser hems"],
+        "completedRegions": [
+          "lower trouser legs",
+          "trouser hems"
+        ],
         "footwearAdded": false,
         "note": {
           "zh": "裤腿与裤脚由 AI 根据可见服饰补全，非原照片中可见的细节。",
@@ -3645,9 +3651,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "original": "custom/costume/originals/custom_costume_male_003.png",
-        "image": "custom/costume/images/custom_costume_male_003.webp",
-        "thumbnail": "custom/costume/thumbnails/custom_costume_male_003.webp",
+        "original": "custom/costume/originals/custom_costume_street_062.png",
+        "image": "custom/costume/images/custom_costume_street_062.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_062.webp",
         "provenance": {
           "originalSha256": "400700636695073db78f184378c090fd1588098f44d665781b6657900a76a410",
           "width": 1024,
@@ -4133,9 +4139,9 @@
           "zh": "正面",
           "en": "Front"
         },
-        "original": "custom/costume/originals/custom_costume_male_004.png",
-        "image": "custom/costume/images/custom_costume_male_004.webp",
-        "thumbnail": "custom/costume/thumbnails/custom_costume_male_004.webp",
+        "original": "custom/costume/originals/custom_costume_street_063.png",
+        "image": "custom/costume/images/custom_costume_street_063.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_063.webp",
         "provenance": {
           "originalSha256": "914975951268f61d20265df5d45029baa0831addcfcae72e0e35d6131fa8ee94",
           "width": 1024,
@@ -4479,6 +4485,3438 @@
         "thumbnail": "custom/costume/thumbnails/custom_costume_street_011.webp",
         "provenance": {
           "originalSha256": "74dd6f130bd3a93a447e489b6b4c7c682f2a50c0dd140c87ac15d2b6718d6748",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_072",
+    "kind": "costume",
+    "code": "ST-072",
+    "title": {
+      "zh": "酒红挂脖镂空长礼裙与珠宝套装",
+      "en": "Burgundy halter cutout gown with jewelry"
+    },
+    "category": {
+      "id": "party",
+      "zh": "派对穿搭",
+      "en": "Party"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "女性 写实 白色背景 完整穿搭 无人物 酒红 丝绒 挂脖 镂空 长裙 珠宝 耳环 高跟鞋",
+      "en": "female photographic white background complete outfit no person burgundy velvet halter cutout gown jewelry earrings heels"
+    },
+    "tags": [
+      {
+        "id": "female",
+        "zh": "女性",
+        "en": "Female"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "da4cfa988a02af2d328df9a4bb44bb97a745a148fe8066d6522b6974c2de073e",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/images/custom_costume_street_072.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_072",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_072.webp",
+        "image": "custom/costume/images/custom_costume_street_072.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_072.webp",
+        "provenance": {
+          "originalSha256": "da4cfa988a02af2d328df9a4bb44bb97a745a148fe8066d6522b6974c2de073e",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_073",
+    "kind": "costume",
+    "code": "ST-073",
+    "title": {
+      "zh": "奶油白短西装与不对称裙裤套装",
+      "en": "Ivory cropped blazer and asymmetric skort set"
+    },
+    "category": {
+      "id": "suit",
+      "zh": "西装穿搭",
+      "en": "Suits"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "女性 写实 白色背景 完整穿搭 无人物 奶油白 短西装 高领 不对称 裙裤 手提包 尖头高跟鞋",
+      "en": "female photographic white background complete outfit no person ivory cropped blazer high neck asymmetric skort handbag pointed heels"
+    },
+    "tags": [
+      {
+        "id": "female",
+        "zh": "女性",
+        "en": "Female"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "1f74fd26a47acfdfcb043e51f65ecf43b9126137f1f80eebedc5a7781476e9b5",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/images/custom_costume_street_073.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_073",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_073.webp",
+        "image": "custom/costume/images/custom_costume_street_073.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_073.webp",
+        "provenance": {
+          "originalSha256": "1f74fd26a47acfdfcb043e51f65ecf43b9126137f1f80eebedc5a7781476e9b5",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_074",
+    "kind": "costume",
+    "code": "ST-074",
+    "title": {
+      "zh": "宝蓝单肩开衩长裙与银色高跟鞋",
+      "en": "Royal blue one-shoulder slit gown with silver heels"
+    },
+    "category": {
+      "id": "party",
+      "zh": "派对穿搭",
+      "en": "Party"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "女性 写实 白色背景 完整穿搭 无人物 宝蓝 单肩 腰部镂空 开衩 长裙 手提包 项链 银色高跟鞋",
+      "en": "female photographic white background complete outfit no person royal blue one shoulder waist cutout slit gown handbag necklace silver heels"
+    },
+    "tags": [
+      {
+        "id": "female",
+        "zh": "女性",
+        "en": "Female"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "f828e82d5dabfd3f196c476ea87d44976aa3f6718c94edcf863ad0adb2f5380b",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/images/custom_costume_street_074.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_074",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_074.webp",
+        "image": "custom/costume/images/custom_costume_street_074.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_074.webp",
+        "provenance": {
+          "originalSha256": "f828e82d5dabfd3f196c476ea87d44976aa3f6718c94edcf863ad0adb2f5380b",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_075",
+    "kind": "costume",
+    "code": "ST-075",
+    "title": {
+      "zh": "白色短袖衬衫与深灰百褶短裙",
+      "en": "White short-sleeve shirt and charcoal pleated mini skirt"
+    },
+    "category": {
+      "id": "street",
+      "zh": "日常穿搭",
+      "en": "Everyday"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "女性 写实 白色背景 完整穿搭 无人物 白色 短袖 衬衫 深灰 百褶 短裙 皮带 黑色乐福鞋",
+      "en": "female photographic white background complete outfit no person white short sleeve shirt charcoal pleated mini skirt belt black loafers"
+    },
+    "tags": [
+      {
+        "id": "female",
+        "zh": "女性",
+        "en": "Female"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "bee88606796e4a13ef968a01a2e8ebc85abded8da45eddc4eced6253947dc2ce",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/images/custom_costume_street_075.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_075",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_075.webp",
+        "image": "custom/costume/images/custom_costume_street_075.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_075.webp",
+        "provenance": {
+          "originalSha256": "bee88606796e4a13ef968a01a2e8ebc85abded8da45eddc4eced6253947dc2ce",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_076",
+    "kind": "costume",
+    "code": "ST-076",
+    "title": {
+      "zh": "灰粉短西装与粉色荷叶边短裙",
+      "en": "Dusty rose cropped blazer and pink ruffle mini skirt"
+    },
+    "category": {
+      "id": "spring",
+      "zh": "春日穿搭",
+      "en": "Spring"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "女性 写实 白色背景 完整穿搭 无人物 灰粉 短西装 黑色内搭 粉色 荷叶边 短裙 黑色肩包 粉色高跟鞋",
+      "en": "female photographic white background complete outfit no person dusty rose cropped blazer black top pink ruffle mini skirt black shoulder bag pink heels"
+    },
+    "tags": [
+      {
+        "id": "female",
+        "zh": "女性",
+        "en": "Female"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "e154a5bec1572f96010a908afb86851e389aef4e74210bf0e6cc3e77a5424d22",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/images/custom_costume_street_076.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_076",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_076.webp",
+        "image": "custom/costume/images/custom_costume_street_076.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_076.webp",
+        "provenance": {
+          "originalSha256": "e154a5bec1572f96010a908afb86851e389aef4e74210bf0e6cc3e77a5424d22",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_077",
+    "kind": "costume",
+    "code": "ST-077",
+    "title": {
+      "zh": "银色短夹克与拼色牛仔短裙",
+      "en": "Silver cropped bomber and patchwork denim mini skirt"
+    },
+    "category": {
+      "id": "street",
+      "zh": "日常穿搭",
+      "en": "Everyday"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "女性 写实 白色背景 完整穿搭 无人物 银色 短夹克 白色高领 拼色 牛仔 不对称 短裙 链条 黑色小包 白色运动鞋",
+      "en": "female photographic white background complete outfit no person silver cropped bomber white turtleneck patchwork denim asymmetric mini skirt chain black mini bag white sneakers"
+    },
+    "tags": [
+      {
+        "id": "female",
+        "zh": "女性",
+        "en": "Female"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "fe96d2a1430349e2a7b741a7f2adf28eb8c8a642801c97a6196db9bbf9b96945",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/images/custom_costume_street_077.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_077",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_077.webp",
+        "image": "custom/costume/images/custom_costume_street_077.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_077.webp",
+        "provenance": {
+          "originalSha256": "fe96d2a1430349e2a7b741a7f2adf28eb8c8a642801c97a6196db9bbf9b96945",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_078",
+    "kind": "costume",
+    "code": "ST-078",
+    "title": {
+      "zh": "奶白短西装与黑白粗花呢短裙",
+      "en": "Ivory cropped blazer and monochrome tweed mini skirt"
+    },
+    "category": {
+      "id": "suit",
+      "zh": "西装穿搭",
+      "en": "Suits"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "女性 写实 白色背景 完整穿搭 无人物 奶白 短西装 黑色高领 黑白 粗花呢 短裙 胸针 黑色手提包 尖头高跟鞋",
+      "en": "female photographic white background complete outfit no person ivory cropped blazer black turtleneck monochrome tweed mini skirt brooch black handbag pointed heels"
+    },
+    "tags": [
+      {
+        "id": "female",
+        "zh": "女性",
+        "en": "Female"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "f30109e24fe4f35a78116298ac71b1e8da96f3fdc116abb0158d32f3bc974983",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/images/custom_costume_street_078.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_078",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_078.webp",
+        "image": "custom/costume/images/custom_costume_street_078.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_078.webp",
+        "provenance": {
+          "originalSha256": "f30109e24fe4f35a78116298ac71b1e8da96f3fdc116abb0158d32f3bc974983",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_079",
+    "kind": "costume",
+    "code": "ST-079",
+    "title": {
+      "zh": "紫色短款Polo衫与白色百褶裙",
+      "en": "Lilac cropped polo and white pleated skirt"
+    },
+    "category": {
+      "id": "summer",
+      "zh": "夏日穿搭",
+      "en": "Summer"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "女性 写实 白色背景 完整穿搭 无人物 紫色 短款 Polo 拉链 白色 百褶 短裙 白色运动鞋",
+      "en": "female photographic white background complete outfit no person lilac cropped polo zip white pleated mini skirt white sneakers"
+    },
+    "tags": [
+      {
+        "id": "female",
+        "zh": "女性",
+        "en": "Female"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "409cea91b6e58ed7d1ad51b38bf091946592747230d6f8973db39fccb28d8a5a",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/images/custom_costume_street_079.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_079",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_079.webp",
+        "image": "custom/costume/images/custom_costume_street_079.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_079.webp",
+        "provenance": {
+          "originalSha256": "409cea91b6e58ed7d1ad51b38bf091946592747230d6f8973db39fccb28d8a5a",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_080",
+    "kind": "costume",
+    "code": "ST-080",
+    "title": {
+      "zh": "粉色吊带束身上衣与奶白蕾丝层叠裙",
+      "en": "Pink corset camisole and ivory tiered lace skirt"
+    },
+    "category": {
+      "id": "spring",
+      "zh": "春日穿搭",
+      "en": "Spring"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "女性 写实 白色背景 完整穿搭 无人物 粉色 吊带 束身上衣 蝴蝶结 奶白 蕾丝 层叠 短裙 玛丽珍鞋",
+      "en": "female photographic white background complete outfit no person pink corset camisole bow ivory lace tiered mini skirt Mary Jane shoes"
+    },
+    "tags": [
+      {
+        "id": "female",
+        "zh": "女性",
+        "en": "Female"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "368b3ed9f38fca85146cacb23a391cb36c1c2b2cbc3da3de7070b5339a235cef",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/images/custom_costume_street_080.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_080",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_080.webp",
+        "image": "custom/costume/images/custom_costume_street_080.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_080.webp",
+        "provenance": {
+          "originalSha256": "368b3ed9f38fca85146cacb23a391cb36c1c2b2cbc3da3de7070b5339a235cef",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_081",
+    "kind": "costume",
+    "code": "ST-081",
+    "title": {
+      "zh": "奶白针织上衣与棕色格纹短裙长靴",
+      "en": "Ivory knit top with brown plaid mini skirt and tall boots"
+    },
+    "category": {
+      "id": "autumn",
+      "zh": "秋日穿搭",
+      "en": "Autumn"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "女性 写实 白色背景 完整穿搭 无人物 奶白 长袖 针织 棕色 格纹 不对称 短裙 搭扣 棕色长靴",
+      "en": "female photographic white background complete outfit no person ivory long sleeve knit brown plaid asymmetric mini skirt buckles brown tall boots"
+    },
+    "tags": [
+      {
+        "id": "female",
+        "zh": "女性",
+        "en": "Female"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "c970240559579f3ac0a7469222e273b1d4f8396cf596ef90b4f7226351d2756c",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/images/custom_costume_street_081.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_081",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_081.webp",
+        "image": "custom/costume/images/custom_costume_street_081.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_081.webp",
+        "provenance": {
+          "originalSha256": "c970240559579f3ac0a7469222e273b1d4f8396cf596ef90b4f7226351d2756c",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_082",
+    "kind": "costume",
+    "code": "ST-082",
+    "title": {
+      "zh": "粉色露肩针织衫与奶白泡泡短裙",
+      "en": "Pink off-shoulder knit and ivory bubble mini skirt"
+    },
+    "category": {
+      "id": "spring",
+      "zh": "春日穿搭",
+      "en": "Spring"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "女性 写实 白色背景 完整穿搭 无人物 粉色 露肩 长袖 针织 奶白 泡泡 短裙 蝴蝶结 粉色平底鞋",
+      "en": "female photographic white background complete outfit no person pink off shoulder long sleeve knit ivory bubble mini skirt bow pink flats"
+    },
+    "tags": [
+      {
+        "id": "female",
+        "zh": "女性",
+        "en": "Female"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "017b6c840dc216b424d8327bded34457bd0b1dc3ca3827f62a93e01f0d33cda5",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/images/custom_costume_street_082.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_082",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_082.webp",
+        "image": "custom/costume/images/custom_costume_street_082.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_082.webp",
+        "provenance": {
+          "originalSha256": "017b6c840dc216b424d8327bded34457bd0b1dc3ca3827f62a93e01f0d33cda5",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_083",
+    "kind": "costume",
+    "code": "ST-083",
+    "title": {
+      "zh": "浅色碎花吊带短裙与奶白凉鞋",
+      "en": "Light floral camisole mini dress and ivory sandals"
+    },
+    "category": {
+      "id": "summer",
+      "zh": "夏日穿搭",
+      "en": "Summer"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "女性 写实 白色背景 完整穿搭 无人物 浅色 碎花 吊带 短裙 奶白 凉鞋",
+      "en": "female photographic white background complete outfit no person light floral camisole mini dress ivory sandals"
+    },
+    "tags": [
+      {
+        "id": "female",
+        "zh": "女性",
+        "en": "Female"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "2d708a08b706cbc24138f731bc8ebec57e5e507564c1602664359d5f6ae78063",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/images/custom_costume_street_083.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_083",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_083.webp",
+        "image": "custom/costume/images/custom_costume_street_083.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_083.webp",
+        "provenance": {
+          "originalSha256": "2d708a08b706cbc24138f731bc8ebec57e5e507564c1602664359d5f6ae78063",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_084",
+    "kind": "costume",
+    "code": "ST-084",
+    "title": {
+      "zh": "黑色单肩上衣与银色褶皱短裙",
+      "en": "Black one-shoulder top and silver ruched mini skirt"
+    },
+    "category": {
+      "id": "party",
+      "zh": "派对穿搭",
+      "en": "Party"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "女性 写实 白色背景 完整穿搭 无人物 黑色 单肩 上衣 银色 褶皱 不对称 短裙 黑色细带高跟鞋",
+      "en": "female photographic white background complete outfit no person black one shoulder top silver ruched asymmetric mini skirt black strappy heels"
+    },
+    "tags": [
+      {
+        "id": "female",
+        "zh": "女性",
+        "en": "Female"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "1c7ccbdd7ade1b30d9307a3352beb79343d865b43322ee307f2c5a8ab01619d7",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/images/custom_costume_street_084.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_084",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_084.webp",
+        "image": "custom/costume/images/custom_costume_street_084.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_084.webp",
+        "provenance": {
+          "originalSha256": "1c7ccbdd7ade1b30d9307a3352beb79343d865b43322ee307f2c5a8ab01619d7",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_085",
+    "kind": "costume",
+    "code": "ST-085",
+    "title": {
+      "zh": "黑色抹胸短裙与黑丝袜酒红配饰",
+      "en": "Black strapless mini dress with sheer stockings and burgundy accessories"
+    },
+    "category": {
+      "id": "party",
+      "zh": "派对穿搭",
+      "en": "Party"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "女性 写实 白色背景 完整穿搭 无人物 黑色 抹胸 褶皱 短裙 黑丝袜 酒红 肩包 尖头高跟鞋 金色耳环 手镯",
+      "en": "female photographic white background complete outfit no person black strapless ruched mini dress sheer black stockings burgundy shoulder bag pointed heels gold earrings bracelet"
+    },
+    "tags": [
+      {
+        "id": "female",
+        "zh": "女性",
+        "en": "Female"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "e82155b60523ac853e509812c5507c26df27202a726a32b90488701e37bea7a3",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/images/custom_costume_street_085.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_085",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_085.webp",
+        "image": "custom/costume/images/custom_costume_street_085.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_085.webp",
+        "provenance": {
+          "originalSha256": "e82155b60523ac853e509812c5507c26df27202a726a32b90488701e37bea7a3",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_086",
+    "kind": "costume",
+    "code": "ST-086",
+    "title": {
+      "zh": "粉色缎面吊带短裙与白丝袜套装",
+      "en": "Pink satin camisole mini dress with white stockings"
+    },
+    "category": {
+      "id": "party",
+      "zh": "派对穿搭",
+      "en": "Party"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "女性 写实 白色背景 完整穿搭 无人物 粉色 缎面 吊带 褶皱 短裙 白丝袜 奶白肩包 白色高跟凉鞋 项链 耳饰",
+      "en": "female photographic white background complete outfit no person pink satin camisole ruched mini dress white stockings ivory shoulder bag white heeled sandals necklace earrings"
+    },
+    "tags": [
+      {
+        "id": "female",
+        "zh": "女性",
+        "en": "Female"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "c171be60b1ce0a04a8ad2d3fc01424f75f76daf515fcc1103d20f8820d10dfc3",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/images/custom_costume_street_086.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_086",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_086.webp",
+        "image": "custom/costume/images/custom_costume_street_086.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_086.webp",
+        "provenance": {
+          "originalSha256": "c171be60b1ce0a04a8ad2d3fc01424f75f76daf515fcc1103d20f8820d10dfc3",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_087",
+    "kind": "costume",
+    "code": "ST-087",
+    "title": {
+      "zh": "黑色交叉挂脖上衣与棕色短裙长靴",
+      "en": "Black cross-halter top with brown mini skirt and tall boots"
+    },
+    "category": {
+      "id": "party",
+      "zh": "派对穿搭",
+      "en": "Party"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "女性 写实 白色背景 完整穿搭 无人物 黑色 交叉 挂脖 上衣 棕色 系带 短裙 棕色丝袜 长靴 奶白包包 金色耳环 戒指",
+      "en": "female photographic white background complete outfit no person black cross halter top brown lace up mini skirt brown stockings tall boots ivory bag gold earrings ring"
+    },
+    "tags": [
+      {
+        "id": "female",
+        "zh": "女性",
+        "en": "Female"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "8dbd08ab85e23987e6aa9504336ade9e7d513a374eafe5828bdf5b7c4f8af77a",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/images/custom_costume_street_087.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_087",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_087.webp",
+        "image": "custom/costume/images/custom_costume_street_087.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_087.webp",
+        "provenance": {
+          "originalSha256": "8dbd08ab85e23987e6aa9504336ade9e7d513a374eafe5828bdf5b7c4f8af77a",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_088",
+    "kind": "costume",
+    "code": "ST-088",
+    "title": {
+      "zh": "蓝绿条纹翻领卫衣与卡其宽松长裤",
+      "en": "Navy and green striped collared sweatshirt with khaki trousers"
+    },
+    "category": {
+      "id": "street",
+      "zh": "日常穿搭",
+      "en": "Everyday"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 蓝绿 条纹 翻领 卫衣 卡其 宽松 长裤 棕色休闲鞋",
+      "en": "male photographic white background complete outfit no person navy green striped collared sweatshirt khaki relaxed trousers brown casual shoes"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "fdd70598c943715f2bda6a90341b189456807a539133ada0a26a1712536ab21d",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/originals/1794281100_9967a6f63de33b22ff70cf261c28a216.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_088",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_088.webp",
+        "image": "custom/costume/images/custom_costume_street_088.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_088.webp",
+        "provenance": {
+          "originalSha256": "fdd70598c943715f2bda6a90341b189456807a539133ada0a26a1712536ab21d",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_089",
+    "kind": "costume",
+    "code": "ST-089",
+    "title": {
+      "zh": "浅蓝衬衫与深蓝直筒牛仔裤",
+      "en": "Light blue shirt and dark blue straight-leg jeans"
+    },
+    "category": {
+      "id": "street",
+      "zh": "日常穿搭",
+      "en": "Everyday"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 浅蓝 衬衫 白色T恤 深蓝 直筒 牛仔裤 白色运动鞋",
+      "en": "male photographic white background complete outfit no person light blue shirt white T shirt dark blue straight leg jeans white sneakers"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "f685fbf9e47bc7473940b4a6429177374ae554ff7aca0e5009d596d246697eca",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/originals/1794281114_457ed7cb57caf0a0fa9b1579c3fd2582.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_089",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_089.webp",
+        "image": "custom/costume/images/custom_costume_street_089.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_089.webp",
+        "provenance": {
+          "originalSha256": "f685fbf9e47bc7473940b4a6429177374ae554ff7aca0e5009d596d246697eca",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_090",
+    "kind": "costume",
+    "code": "ST-090",
+    "title": {
+      "zh": "棕色工装夹克与米白宽松长裤",
+      "en": "Brown workwear jacket and ivory relaxed trousers"
+    },
+    "category": {
+      "id": "autumn",
+      "zh": "秋日穿搭",
+      "en": "Autumn"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 棕色 工装 夹克 米白 内搭 宽松 长裤 棕色乐福鞋",
+      "en": "male photographic white background complete outfit no person brown workwear jacket ivory inner top relaxed trousers brown loafers"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "c97e3e38ea3d5ecdd5d46abc5b9bc221810c592fab8fad66af514ec3b6d13397",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/originals/1794281124_83d186b4143aa578fa18a56517edd9a8.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_090",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_090.webp",
+        "image": "custom/costume/images/custom_costume_street_090.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_090.webp",
+        "provenance": {
+          "originalSha256": "c97e3e38ea3d5ecdd5d46abc5b9bc221810c592fab8fad66af514ec3b6d13397",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_091",
+    "kind": "costume",
+    "code": "ST-091",
+    "title": {
+      "zh": "灰色连帽卫衣与黑色宽松牛仔裤",
+      "en": "Grey zip hoodie and black relaxed jeans"
+    },
+    "category": {
+      "id": "street",
+      "zh": "日常穿搭",
+      "en": "Everyday"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 灰色 连帽 拉链 卫衣 白色T恤 黑色 宽松 牛仔裤 黑白运动鞋",
+      "en": "male photographic white background complete outfit no person grey hooded zip sweatshirt white T shirt black relaxed jeans black white sneakers"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "77f102d5c258258567643b59abbb8b90bd1cbac01272785341b949f20e5c5e7a",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/originals/1794281124_8705aeda7033c66b0f2b9e3461d90bef.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_091",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_091.webp",
+        "image": "custom/costume/images/custom_costume_street_091.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_091.webp",
+        "provenance": {
+          "originalSha256": "77f102d5c258258567643b59abbb8b90bd1cbac01272785341b949f20e5c5e7a",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_092",
+    "kind": "costume",
+    "code": "ST-092",
+    "title": {
+      "zh": "黑色立领夹克与深灰阔腿长裤",
+      "en": "Black stand-collar jacket and charcoal wide-leg trousers"
+    },
+    "category": {
+      "id": "street",
+      "zh": "日常穿搭",
+      "en": "Everyday"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 黑色 立领 夹克 白色T恤 深灰 阔腿 长裤 黑色皮鞋",
+      "en": "male photographic white background complete outfit no person black stand collar jacket white T shirt charcoal wide leg trousers black leather shoes"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "7e4b4a0e98035e3720c0032dfffc56b411266570020a76edd3a1c0a7b7c707b4",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/originals/1794281136_50e7e3997daef35cdbe8f18d6597cfe5.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_092",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_092.webp",
+        "image": "custom/costume/images/custom_costume_street_092.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_092.webp",
+        "provenance": {
+          "originalSha256": "7e4b4a0e98035e3720c0032dfffc56b411266570020a76edd3a1c0a7b7c707b4",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_093",
+    "kind": "costume",
+    "code": "ST-093",
+    "title": {
+      "zh": "酒红拼色Polo衫与浅蓝宽松牛仔裤",
+      "en": "Burgundy contrast polo and light blue relaxed jeans"
+    },
+    "category": {
+      "id": "summer",
+      "zh": "夏日穿搭",
+      "en": "Summer"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 酒红 拼色 翻领 短袖 Polo 浅蓝 宽松 牛仔裤 酒红白色运动鞋",
+      "en": "male photographic white background complete outfit no person burgundy contrast collar short sleeve polo light blue relaxed jeans burgundy white sneakers"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "09925552a28d8efd8330d7a46720ee17750d1e8f64115ed2dd9a09cd29d0293b",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/originals/1794281141_ad344e5ffdca908d1345e1af85ed4406.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_093",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_093.webp",
+        "image": "custom/costume/images/custom_costume_street_093.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_093.webp",
+        "provenance": {
+          "originalSha256": "09925552a28d8efd8330d7a46720ee17750d1e8f64115ed2dd9a09cd29d0293b",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_094",
+    "kind": "costume",
+    "code": "ST-094",
+    "title": {
+      "zh": "蓝灰连帽外套与橄榄绿工装裤",
+      "en": "Blue-grey hooded jacket and olive cargo trousers"
+    },
+    "category": {
+      "id": "street",
+      "zh": "日常穿搭",
+      "en": "Everyday"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 蓝灰 连帽 外套 灰色内搭 橄榄绿 工装裤 灰色运动鞋",
+      "en": "male photographic white background complete outfit no person blue grey hooded jacket grey inner top olive cargo trousers grey sneakers"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "47e5fbcf22ae836dc705e9808599623327b327286423412e3770270120e5120f",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/originals/1794281153_4dcebd3fd7ad24b63042c55888ebfd6e.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_094",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_094.webp",
+        "image": "custom/costume/images/custom_costume_street_094.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_094.webp",
+        "provenance": {
+          "originalSha256": "47e5fbcf22ae836dc705e9808599623327b327286423412e3770270120e5120f",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_095",
+    "kind": "costume",
+    "code": "ST-095",
+    "title": {
+      "zh": "米白棕领Polo衫与棕色西裤",
+      "en": "Ivory contrast-collar polo and brown tailored trousers"
+    },
+    "category": {
+      "id": "summer",
+      "zh": "夏日穿搭",
+      "en": "Summer"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 米白 棕色 翻领 短袖 Polo 西裤 皮带 棕色乐福鞋",
+      "en": "male photographic white background complete outfit no person ivory brown contrast collar short sleeve polo tailored trousers belt brown loafers"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "60b643cdc2f0ddb22d7280f45776a07ae0d81e95e2a94bfa844f5114c04e043f",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/originals/1794281162_14ce97297aa0f18d4abda381c596ce6e.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_095",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_095.webp",
+        "image": "custom/costume/images/custom_costume_street_095.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_095.webp",
+        "provenance": {
+          "originalSha256": "60b643cdc2f0ddb22d7280f45776a07ae0d81e95e2a94bfa844f5114c04e043f",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_096",
+    "kind": "costume",
+    "code": "ST-096",
+    "title": {
+      "zh": "藏蓝卫衣与浅灰运动短裤",
+      "en": "Navy sweatshirt and light grey athletic shorts"
+    },
+    "category": {
+      "id": "street",
+      "zh": "日常穿搭",
+      "en": "Everyday"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 藏蓝 圆领 卫衣 浅灰 抽绳 运动短裤 白色中筒袜 拼色运动鞋",
+      "en": "male photographic white background complete outfit no person navy crew neck sweatshirt light grey drawstring athletic shorts white crew socks contrast sneakers"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "d5db4458bfccdbc87191e1bb43e0fcb498a61aa6e8f95b79b1be6dde9145448f",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/originals/1794281162_697e4c7a756bab96af744e8aded912c3.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_096",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_096.webp",
+        "image": "custom/costume/images/custom_costume_street_096.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_096.webp",
+        "provenance": {
+          "originalSha256": "d5db4458bfccdbc87191e1bb43e0fcb498a61aa6e8f95b79b1be6dde9145448f",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_097",
+    "kind": "costume",
+    "code": "ST-097",
+    "title": {
+      "zh": "浅绿短袖衬衫与米白宽松长裤",
+      "en": "Light green short-sleeve shirt and ivory relaxed trousers"
+    },
+    "category": {
+      "id": "summer",
+      "zh": "夏日穿搭",
+      "en": "Summer"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110",
+      "en": "New outfits · 20261110"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 浅绿 短袖 衬衫 白色T恤 米白 宽松 长裤 棕色凉鞋",
+      "en": "male photographic white background complete outfit no person light green short sleeve shirt white T shirt ivory relaxed trousers brown sandals"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "d8c2f7b59220652f964b12336c9c552d04a175df5793e39e4661bf5bc4e314a8",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110",
+      "sourceFile": "custom/costume/originals/1794281174_80c040116806b6db3d490630cd89845b.webp",
+      "note": {
+        "zh": "用户提供的WebP原图，保留原始文件字节；预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided WebP original preserved byte-for-byte. Preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_097",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_097.webp",
+        "image": "custom/costume/images/custom_costume_street_097.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_097.webp",
+        "provenance": {
+          "originalSha256": "d8c2f7b59220652f964b12336c9c552d04a175df5793e39e4661bf5bc4e314a8",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_098",
+    "kind": "costume",
+    "code": "ST-098",
+    "title": {
+      "zh": "酒红拼色棒球夹克与黑色阔腿裤",
+      "en": "Burgundy varsity jacket and black wide-leg trousers"
+    },
+    "category": {
+      "id": "street",
+      "zh": "日常穿搭",
+      "en": "Everyday"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第二批",
+      "en": "New outfits · 20261110 · Batch 2"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 酒红 米白 拼色 棒球夹克 灰色T恤 黑色 阔腿裤 酒红运动鞋",
+      "en": "male photographic white background complete outfit no person burgundy ivory color block varsity jacket grey T shirt black wide leg trousers burgundy sneakers"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "610193513abca3f70de7c6f941e9189661c11db21dd7721272366a944b9b7582",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-02",
+      "sourceFile": "custom/costume/images/1794283126_82fb0d112ca6b9093f4d434a15dacaef.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_098",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_098.png",
+        "image": "custom/costume/images/custom_costume_street_098.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_098.webp",
+        "provenance": {
+          "originalSha256": "610193513abca3f70de7c6f941e9189661c11db21dd7721272366a944b9b7582",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_099",
+    "kind": "costume",
+    "code": "ST-099",
+    "title": {
+      "zh": "深蓝牛仔夹克套装与棕色系带短靴",
+      "en": "Dark denim jacket set with brown lace-up boots"
+    },
+    "category": {
+      "id": "street",
+      "zh": "日常穿搭",
+      "en": "Everyday"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第二批",
+      "en": "New outfits · 20261110 · Batch 2"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 深蓝 牛仔夹克 奶白内搭 牛仔裤 皮带 棕色 系带 短靴",
+      "en": "male photographic white background complete outfit no person dark blue denim jacket ivory inner top jeans belt brown lace up boots"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "f94ead1d0ac579db32ca49f0fc74d36f3c1f25e866c654bfa49685e438f3c377",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-02",
+      "sourceFile": "custom/costume/images/1794283130_db223cad313bb33fc12f3563452aaef2.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_099",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_099.png",
+        "image": "custom/costume/images/custom_costume_street_099.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_099.webp",
+        "provenance": {
+          "originalSha256": "f94ead1d0ac579db32ca49f0fc74d36f3c1f25e866c654bfa49685e438f3c377",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_100",
+    "kind": "costume",
+    "code": "ST-100",
+    "title": {
+      "zh": "橄榄绿飞行夹克与灰色运动长裤",
+      "en": "Olive bomber jacket and grey sweatpants"
+    },
+    "category": {
+      "id": "street",
+      "zh": "日常穿搭",
+      "en": "Everyday"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第二批",
+      "en": "New outfits · 20261110 · Batch 2"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 橄榄绿 飞行夹克 白色T恤 灰色 宽松 运动长裤 灰白运动鞋",
+      "en": "male photographic white background complete outfit no person olive bomber jacket white T shirt grey relaxed sweatpants grey white sneakers"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "48ad62b3eca68265e80dbe6e0c93181183930eb16caff78b77a92acafbbc8481",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-02",
+      "sourceFile": "custom/costume/images/1794283135_0039b35e2a97f7a5d5947a60d1d21411.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_100",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_100.png",
+        "image": "custom/costume/images/custom_costume_street_100.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_100.webp",
+        "provenance": {
+          "originalSha256": "48ad62b3eca68265e80dbe6e0c93181183930eb16caff78b77a92acafbbc8481",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_101",
+    "kind": "costume",
+    "code": "ST-101",
+    "title": {
+      "zh": "米色菱格针织背心与棕色长裤",
+      "en": "Beige argyle knit vest and brown trousers"
+    },
+    "category": {
+      "id": "autumn",
+      "zh": "秋日穿搭",
+      "en": "Autumn"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第二批",
+      "en": "New outfits · 20261110 · Batch 2"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 米色 菱格 针织背心 蓝白条纹 衬衫 棕色 宽松 长裤 棕色乐福鞋",
+      "en": "male photographic white background complete outfit no person beige argyle knit vest blue white striped shirt brown relaxed trousers brown loafers"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "ec183fefb9fa9673c260317dbde8ffb16d5ee01a0066e9f569d97b0a6fdbbd14",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-02",
+      "sourceFile": "custom/costume/images/1794283139_d94084cbe539e10b19943107f27688d1.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_101",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_101.png",
+        "image": "custom/costume/images/custom_costume_street_101.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_101.webp",
+        "provenance": {
+          "originalSha256": "ec183fefb9fa9673c260317dbde8ffb16d5ee01a0066e9f569d97b0a6fdbbd14",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_102",
+    "kind": "costume",
+    "code": "ST-102",
+    "title": {
+      "zh": "灰粉针织开衫与浅灰宽松牛仔裤",
+      "en": "Dusty pink cardigan and light grey relaxed jeans"
+    },
+    "category": {
+      "id": "spring",
+      "zh": "春日穿搭",
+      "en": "Spring"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第二批",
+      "en": "New outfits · 20261110 · Batch 2"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 灰粉 针织 开衫 白色T恤 浅灰 宽松 牛仔裤 奶白运动鞋",
+      "en": "male photographic white background complete outfit no person dusty pink knit cardigan white T shirt light grey relaxed jeans ivory sneakers"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "845594bde77d87ec1b6a1ca6f6d46c7eb6fd9f5efe8d1df8588dca4f7c5caa29",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-02",
+      "sourceFile": "custom/costume/images/1794283143_d63942c2ea4467a970d4dc1431104fda.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_102",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_102.png",
+        "image": "custom/costume/images/custom_costume_street_102.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_102.webp",
+        "provenance": {
+          "originalSha256": "845594bde77d87ec1b6a1ca6f6d46c7eb6fd9f5efe8d1df8588dca4f7c5caa29",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_103",
+    "kind": "costume",
+    "code": "ST-103",
+    "title": {
+      "zh": "黑白条纹长袖衫与卡其短裤",
+      "en": "Black and white striped top with khaki shorts"
+    },
+    "category": {
+      "id": "summer",
+      "zh": "夏日穿搭",
+      "en": "Summer"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第二批",
+      "en": "New outfits · 20261110 · Batch 2"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 黑白 条纹 长袖 圆领 上衣 卡其 短裤 藏蓝 帆布鞋",
+      "en": "male photographic white background complete outfit no person black white striped long sleeve crew neck top khaki shorts navy canvas sneakers"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "b7bc6abd767fe04391044fda5452e020c164dbd1b97687af66d75fe099851c15",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-02",
+      "sourceFile": "custom/costume/images/1794283153_21e251c213d1cb7a07d6bfab2a51efbb.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_103",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_103.png",
+        "image": "custom/costume/images/custom_costume_street_103.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_103.webp",
+        "provenance": {
+          "originalSha256": "b7bc6abd767fe04391044fda5452e020c164dbd1b97687af66d75fe099851c15",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_104",
+    "kind": "costume",
+    "code": "ST-104",
+    "title": {
+      "zh": "浅灰休闲西装与深蓝牛仔裤",
+      "en": "Light grey casual blazer and dark blue jeans"
+    },
+    "category": {
+      "id": "suit",
+      "zh": "西装穿搭",
+      "en": "Suits"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第二批",
+      "en": "New outfits · 20261110 · Batch 2"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 浅灰 休闲 西装 白色T恤 深蓝 牛仔裤 皮带 白色运动鞋",
+      "en": "male photographic white background complete outfit no person light grey casual blazer white T shirt dark blue jeans belt white sneakers"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "51932cb10485eef7cec33f8729c346b803d885dfdae1a87f11086d060577cdb5",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-02",
+      "sourceFile": "custom/costume/images/1794283187_f3477de07763068d7d5a1e1e3b05eac5.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_104",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_104.png",
+        "image": "custom/costume/images/custom_costume_street_104.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_104.webp",
+        "provenance": {
+          "originalSha256": "51932cb10485eef7cec33f8729c346b803d885dfdae1a87f11086d060577cdb5",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_105",
+    "kind": "costume",
+    "code": "ST-105",
+    "title": {
+      "zh": "橄榄绿绗缝马甲与棕色灯芯绒长裤",
+      "en": "Olive quilted vest and brown corduroy trousers"
+    },
+    "category": {
+      "id": "autumn",
+      "zh": "秋日穿搭",
+      "en": "Autumn"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第二批",
+      "en": "New outfits · 20261110 · Batch 2"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 橄榄绿 菱格 绗缝 马甲 奶白 连帽卫衣 棕色 灯芯绒 长裤 户外鞋",
+      "en": "male photographic white background complete outfit no person olive diamond quilted vest ivory hoodie brown corduroy trousers outdoor shoes"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "d9f76a1e190195624f0a56a32ef58295b7f601083dc7a5c3f64f94ae77e21b11",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-02",
+      "sourceFile": "custom/costume/images/1794283188_55792fa764069104fc30ea2f451cc159.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_105",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_105.png",
+        "image": "custom/costume/images/custom_costume_street_105.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_105.webp",
+        "provenance": {
+          "originalSha256": "d9f76a1e190195624f0a56a32ef58295b7f601083dc7a5c3f64f94ae77e21b11",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_106",
+    "kind": "costume",
+    "code": "ST-106",
+    "title": {
+      "zh": "浅蓝条纹短袖衬衫与藏蓝短裤",
+      "en": "Light blue striped short-sleeve shirt and navy shorts"
+    },
+    "category": {
+      "id": "summer",
+      "zh": "夏日穿搭",
+      "en": "Summer"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第二批",
+      "en": "New outfits · 20261110 · Batch 2"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 浅蓝 条纹 短袖 衬衫 白色T恤 藏蓝 短裤 白色运动鞋",
+      "en": "male photographic white background complete outfit no person light blue striped short sleeve shirt white T shirt navy shorts white sneakers"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "e84fbd8cd0ad451ab85c4097c3a547b9db0b85d2bfc4a3ebaf6940a94af1dc54",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-02",
+      "sourceFile": "custom/costume/images/1794283199_c3f9ff0b1f8e4dbb55a7902780a32a7e.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_106",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_106.png",
+        "image": "custom/costume/images/custom_costume_street_106.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_106.webp",
+        "provenance": {
+          "originalSha256": "e84fbd8cd0ad451ab85c4097c3a547b9db0b85d2bfc4a3ebaf6940a94af1dc54",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_107",
+    "kind": "costume",
+    "code": "ST-107",
+    "title": {
+      "zh": "黑色机车皮夹克与深灰牛仔裤",
+      "en": "Black biker jacket and dark grey jeans"
+    },
+    "category": {
+      "id": "street",
+      "zh": "日常穿搭",
+      "en": "Everyday"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第三批",
+      "en": "New outfits · 20261110 · Batch 3"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 黑色 机车 皮夹克 白色T恤 深灰 牛仔裤 黑色系带短靴",
+      "en": "male photographic white background complete outfit no person black biker leather jacket white T shirt dark grey jeans black lace up boots"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "adf5342c1d399612679e58ed2e208e700d9a4e698e67741275d420c23f1b0ffd",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-03",
+      "sourceFile": "custom/costume/images/1794284190_1b720e5741355ad7a0344c4d0b154630.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_107",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_107.png",
+        "image": "custom/costume/images/custom_costume_street_107.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_107.webp",
+        "provenance": {
+          "originalSha256": "adf5342c1d399612679e58ed2e208e700d9a4e698e67741275d420c23f1b0ffd",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_108",
+    "kind": "costume",
+    "code": "ST-108",
+    "title": {
+      "zh": "蓝白拼色运动夹克与黑色阔腿裤",
+      "en": "Blue and ivory track jacket with black wide-leg trousers"
+    },
+    "category": {
+      "id": "street",
+      "zh": "日常穿搭",
+      "en": "Everyday"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第三批",
+      "en": "New outfits · 20261110 · Batch 3"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 蓝白 拼色 运动夹克 黑色 阔腿裤 蓝白运动鞋",
+      "en": "male photographic white background complete outfit no person blue ivory colour block track jacket black wide leg trousers blue white sneakers"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "9591fcb9bf3746ef7b8aedc3d7f976163652bf131d9e6803e6db422015e08c9e",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-03",
+      "sourceFile": "custom/costume/images/1794284196_346a06318f88d53bb278f095b7c51c62.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_108",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_108.png",
+        "image": "custom/costume/images/custom_costume_street_108.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_108.webp",
+        "provenance": {
+          "originalSha256": "9591fcb9bf3746ef7b8aedc3d7f976163652bf131d9e6803e6db422015e08c9e",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_109",
+    "kind": "costume",
+    "code": "ST-109",
+    "title": {
+      "zh": "米色立领夹克与棕色长裤",
+      "en": "Beige stand-collar jacket and brown trousers"
+    },
+    "category": {
+      "id": "autumn",
+      "zh": "秋日穿搭",
+      "en": "Autumn"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第三批",
+      "en": "New outfits · 20261110 · Batch 3"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 米色 立领 夹克 黑色针织衫 棕色长裤 棕色皮鞋",
+      "en": "male photographic white background complete outfit no person beige stand collar jacket black knit brown trousers brown leather shoes"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "438b8794db94054f1e4c4cd2a46403df003da57f01891511297ed3b56c688d99",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-03",
+      "sourceFile": "custom/costume/images/1794284201_be73b378f365807edd58fc075ce58ed5.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_109",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_109.png",
+        "image": "custom/costume/images/custom_costume_street_109.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_109.webp",
+        "provenance": {
+          "originalSha256": "438b8794db94054f1e4c4cd2a46403df003da57f01891511297ed3b56c688d99",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_110",
+    "kind": "costume",
+    "code": "ST-110",
+    "title": {
+      "zh": "棕色粗花呢西装与深灰长裤",
+      "en": "Brown tweed blazer and charcoal trousers"
+    },
+    "category": {
+      "id": "suit",
+      "zh": "西装穿搭",
+      "en": "Suits"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第三批",
+      "en": "New outfits · 20261110 · Batch 3"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 棕色 粗花呢 西装 灰色针织背心 白衬衫 领带 深灰长裤 棕色德比鞋",
+      "en": "male photographic white background complete outfit no person brown tweed blazer grey knit vest white shirt tie charcoal trousers brown derby shoes"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "5d3b44d88d190ae97acfbd342389d44bdf87f90891244a2dc24f66e65d352607",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-03",
+      "sourceFile": "custom/costume/images/1794284216_2cbd94aa108403f77571992398ebc2ef.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_110",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_110.png",
+        "image": "custom/costume/images/custom_costume_street_110.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_110.webp",
+        "provenance": {
+          "originalSha256": "5d3b44d88d190ae97acfbd342389d44bdf87f90891244a2dc24f66e65d352607",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_111",
+    "kind": "costume",
+    "code": "ST-111",
+    "title": {
+      "zh": "奶白绞花毛衣与深灰九分裤",
+      "en": "Ivory cable-knit sweater and charcoal cropped trousers"
+    },
+    "category": {
+      "id": "autumn",
+      "zh": "秋日穿搭",
+      "en": "Autumn"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第三批",
+      "en": "New outfits · 20261110 · Batch 3"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 奶白 绞花 毛衣 深灰 九分裤 棕色系带短靴",
+      "en": "male photographic white background complete outfit no person ivory cable knit sweater charcoal cropped trousers brown lace up boots"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "fec3c2021c88c37f5705ae847633fb02a565b1c7771954cfb9fa523a22ac1ca6",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-03",
+      "sourceFile": "custom/costume/images/1794284225_233e0d1133d39f2b91fe54d2811b6266.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_111",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_111.png",
+        "image": "custom/costume/images/custom_costume_street_111.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_111.webp",
+        "provenance": {
+          "originalSha256": "fec3c2021c88c37f5705ae847633fb02a565b1c7771954cfb9fa523a22ac1ca6",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_112",
+    "kind": "costume",
+    "code": "ST-112",
+    "title": {
+      "zh": "藏蓝牛角扣大衣与奶白阔腿裤",
+      "en": "Navy duffle coat and ivory wide-leg trousers"
+    },
+    "category": {
+      "id": "winter",
+      "zh": "冬日穿搭",
+      "en": "Winter"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第三批",
+      "en": "New outfits · 20261110 · Batch 3"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 藏蓝 牛角扣 连帽 大衣 灰色内搭 奶白阔腿裤 黑色短靴",
+      "en": "male photographic white background complete outfit no person navy hooded duffle coat grey inner layer ivory wide leg trousers black boots"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "64cf0dcb86438a4f334d50aa5427e9eaf34945d88264552b45db8ed232ee0e3f",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-03",
+      "sourceFile": "custom/costume/images/1794284227_ebbd8e81f872a4c8ed6666b6cdf98664.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_112",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_112.png",
+        "image": "custom/costume/images/custom_costume_street_112.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_112.webp",
+        "provenance": {
+          "originalSha256": "64cf0dcb86438a4f334d50aa5427e9eaf34945d88264552b45db8ed232ee0e3f",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_113",
+    "kind": "costume",
+    "code": "ST-113",
+    "title": {
+      "zh": "藏蓝费尔岛毛衣与驼色灯芯绒裤",
+      "en": "Navy Fair Isle sweater and tan corduroy trousers"
+    },
+    "category": {
+      "id": "winter",
+      "zh": "冬日穿搭",
+      "en": "Winter"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第三批",
+      "en": "New outfits · 20261110 · Batch 3"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 藏蓝 费尔岛 提花 毛衣 驼色 灯芯绒 长裤 棕色短靴",
+      "en": "male photographic white background complete outfit no person navy Fair Isle patterned sweater tan corduroy trousers brown boots"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "ca278fbadeff773fed247332d090dbb2128a01dd25cc44ba4654e353b592c254",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-03",
+      "sourceFile": "custom/costume/images/1794284228_165970c8d9c45a345887d9386ed22162.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_113",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_113.png",
+        "image": "custom/costume/images/custom_costume_street_113.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_113.webp",
+        "provenance": {
+          "originalSha256": "ca278fbadeff773fed247332d090dbb2128a01dd25cc44ba4654e353b592c254",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_114",
+    "kind": "costume",
+    "code": "ST-114",
+    "title": {
+      "zh": "灰褐长大衣与深灰阔腿裤",
+      "en": "Taupe long coat and charcoal wide-leg trousers"
+    },
+    "category": {
+      "id": "winter",
+      "zh": "冬日穿搭",
+      "en": "Winter"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第三批",
+      "en": "New outfits · 20261110 · Batch 3"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 灰褐 长大衣 奶白毛衣 深灰 阔腿裤 奶白运动鞋",
+      "en": "male photographic white background complete outfit no person taupe long coat ivory sweater charcoal wide leg trousers ivory sneakers"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "553957484b38bd89ac7bac8a2af1dd7e4fdba03011040feff54683633f7739f5",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-03",
+      "sourceFile": "custom/costume/images/1794284255_9b1799648a952fd08aca14ad08a6d2d0.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_114",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_114.png",
+        "image": "custom/costume/images/custom_costume_street_114.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_114.webp",
+        "provenance": {
+          "originalSha256": "553957484b38bd89ac7bac8a2af1dd7e4fdba03011040feff54683633f7739f5",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_115",
+    "kind": "costume",
+    "code": "ST-115",
+    "title": {
+      "zh": "深紫短袖叠穿与卡其工装裤",
+      "en": "Deep purple layered T-shirt and khaki cargo trousers"
+    },
+    "category": {
+      "id": "street",
+      "zh": "日常穿搭",
+      "en": "Everyday"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第三批",
+      "en": "New outfits · 20261110 · Batch 3"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 深紫 图案短袖 白色长袖 叠穿 卡其 工装裤 黑色运动鞋",
+      "en": "male photographic white background complete outfit no person deep purple graphic T shirt white long sleeve layered khaki cargo trousers black sneakers"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "436e08275fb85fc176979737de920d0beb373fbf496e442d5603c9eed65cc5f1",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-03",
+      "sourceFile": "custom/costume/images/1794284435_ac7cab1af79f9d32ce0608a7be2a98d2.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_115",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_115.png",
+        "image": "custom/costume/images/custom_costume_street_115.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_115.webp",
+        "provenance": {
+          "originalSha256": "436e08275fb85fc176979737de920d0beb373fbf496e442d5603c9eed65cc5f1",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_116",
+    "kind": "costume",
+    "code": "ST-116",
+    "title": {
+      "zh": "酒红灰条纹毛衣与水洗黑牛仔裤",
+      "en": "Burgundy grey striped sweater and washed black jeans"
+    },
+    "category": {
+      "id": "autumn",
+      "zh": "秋日穿搭",
+      "en": "Autumn"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第三批",
+      "en": "New outfits · 20261110 · Batch 3"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 酒红 深灰 横条纹 毛衣 水洗黑 牛仔裤 酒红短靴",
+      "en": "male photographic white background complete outfit no person burgundy charcoal striped sweater washed black jeans burgundy boots"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "24a5a44a91ea40e7a5525ec90e7240c1185d811a647eb211972a6af8943d3f86",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-03",
+      "sourceFile": "custom/costume/images/1794284443_5cf3b670657119a14206676bb5762cd1.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_116",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_116.png",
+        "image": "custom/costume/images/custom_costume_street_116.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_116.webp",
+        "provenance": {
+          "originalSha256": "24a5a44a91ea40e7a5525ec90e7240c1185d811a647eb211972a6af8943d3f86",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_117",
+    "kind": "costume",
+    "code": "ST-117",
+    "title": {
+      "zh": "橘棕几何印花衬衫与米白阔腿裤",
+      "en": "Terracotta geometric shirt and ivory wide-leg trousers"
+    },
+    "category": {
+      "id": "summer",
+      "zh": "夏日穿搭",
+      "en": "Summer"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第三批",
+      "en": "New outfits · 20261110 · Batch 3"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 橘棕 几何 印花 短袖衬衫 白色T恤 米白 阔腿裤 棕色凉鞋",
+      "en": "male photographic white background complete outfit no person terracotta geometric print short sleeve shirt white T shirt ivory wide leg trousers brown sandals"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "237db8af86b63a4b7fe41634ddc7dcfc39d1ff7fd4ced8a5882b72d0b5df074a",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-03",
+      "sourceFile": "custom/costume/images/1794284446_36ea02bfcf6d97c9b21f386f775d62ac.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_117",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_117.png",
+        "image": "custom/costume/images/custom_costume_street_117.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_117.webp",
+        "provenance": {
+          "originalSha256": "237db8af86b63a4b7fe41634ddc7dcfc39d1ff7fd4ced8a5882b72d0b5df074a",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_118",
+    "kind": "costume",
+    "code": "ST-118",
+    "title": {
+      "zh": "藏蓝针织短袖衬衫与米白短裤",
+      "en": "Navy knit short-sleeve shirt and ivory shorts"
+    },
+    "category": {
+      "id": "summer",
+      "zh": "夏日穿搭",
+      "en": "Summer"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第三批",
+      "en": "New outfits · 20261110 · Batch 3"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 藏蓝 针织 短袖衬衫 白色T恤 米白短裤 驼色草编鞋",
+      "en": "male photographic white background complete outfit no person navy knit short sleeve shirt white T shirt ivory shorts tan espadrilles"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "9c7aaf23587ca7000e6b4b4143ad6707b7d31f269ac99914fc8d920cfb3f211f",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-03",
+      "sourceFile": "custom/costume/images/1794284453_65ac70be91e4965614e5a157141be864.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_118",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_118.png",
+        "image": "custom/costume/images/custom_costume_street_118.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_118.webp",
+        "provenance": {
+          "originalSha256": "9c7aaf23587ca7000e6b4b4143ad6707b7d31f269ac99914fc8d920cfb3f211f",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_119",
+    "kind": "costume",
+    "code": "ST-119",
+    "title": {
+      "zh": "米色系带工装外套与奶白长裤",
+      "en": "Beige belted field jacket and ivory trousers"
+    },
+    "category": {
+      "id": "spring",
+      "zh": "春日穿搭",
+      "en": "Spring"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第三批",
+      "en": "New outfits · 20261110 · Batch 3"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 米色 系带 工装外套 橄榄绿内搭 奶白长裤 棕色沙漠靴",
+      "en": "male photographic white background complete outfit no person beige belted field jacket olive inner layer ivory trousers brown desert boots"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "6efe3b4e27d8d320bf02e314465be657d7536370f843e8ee93befdb685a9090e",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-03",
+      "sourceFile": "custom/costume/images/1794284459_67ccee99c7e8c67eabe421298122fac6.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_119",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_119.png",
+        "image": "custom/costume/images/custom_costume_street_119.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_119.webp",
+        "provenance": {
+          "originalSha256": "6efe3b4e27d8d320bf02e314465be657d7536370f843e8ee93befdb685a9090e",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_120",
+    "kind": "costume",
+    "code": "ST-120",
+    "title": {
+      "zh": "靛蓝系带外套与浅灰宽松裤",
+      "en": "Indigo tie-front jacket and light grey relaxed trousers"
+    },
+    "category": {
+      "id": "street",
+      "zh": "日常穿搭",
+      "en": "Everyday"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第三批",
+      "en": "New outfits · 20261110 · Batch 3"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 靛蓝 系带 外套 白色T恤 浅灰 宽松裤 黑色帆布鞋",
+      "en": "male photographic white background complete outfit no person indigo tie front jacket white T shirt light grey relaxed trousers black canvas shoes"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "b8e5de818e980877177a97d5efdc3e9d8a8b08a67f01ba3d95bece268146366f",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-03",
+      "sourceFile": "custom/costume/images/1794284468_b77a6363cc849ee5ccfbe8441a92335d.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_120",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_120.png",
+        "image": "custom/costume/images/custom_costume_street_120.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_120.webp",
+        "provenance": {
+          "originalSha256": "b8e5de818e980877177a97d5efdc3e9d8a8b08a67f01ba3d95bece268146366f",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_121",
+    "kind": "costume",
+    "code": "ST-121",
+    "title": {
+      "zh": "墨绿盘扣短袖衬衫与黑色阔腿裤",
+      "en": "Dark green frog-button shirt and black wide-leg trousers"
+    },
+    "category": {
+      "id": "summer",
+      "zh": "夏日穿搭",
+      "en": "Summer"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第三批",
+      "en": "New outfits · 20261110 · Batch 3"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 墨绿 盘扣 立领 短袖衬衫 奶白内搭 黑色 阔腿裤 黑色乐福鞋",
+      "en": "male photographic white background complete outfit no person dark green frog button mandarin collar short sleeve shirt ivory inner layer black wide leg trousers black loafers"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "a5eb921e5e529d7d934ab53b2cc7642d19d487b6e64cef7fd997b9c5899c14ad",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-03",
+      "sourceFile": "custom/costume/images/1794284471_d70f270a966195465e7b755753ec133e.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_121",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_121.png",
+        "image": "custom/costume/images/custom_costume_street_121.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_121.webp",
+        "provenance": {
+          "originalSha256": "a5eb921e5e529d7d934ab53b2cc7642d19d487b6e64cef7fd997b9c5899c14ad",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_122",
+    "kind": "costume",
+    "code": "ST-122",
+    "title": {
+      "zh": "浅灰西装马甲短裤套装",
+      "en": "Light grey tailored vest and shorts set"
+    },
+    "category": {
+      "id": "summer",
+      "zh": "夏日穿搭",
+      "en": "Summer"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第三批",
+      "en": "New outfits · 20261110 · Batch 3"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 浅灰 西装马甲 短裤 套装 白色T恤 黑色乐福鞋",
+      "en": "male photographic white background complete outfit no person light grey tailored vest shorts set white T shirt black loafers"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "865a03ef321b485c97cc0b537176cbe8ba88d0c572bb57c1c5b58d309424b076",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-03",
+      "sourceFile": "custom/costume/images/1794284474_6d3594de96c99852fcffb3db69550906.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_122",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_122.png",
+        "image": "custom/costume/images/custom_costume_street_122.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_122.webp",
+        "provenance": {
+          "originalSha256": "865a03ef321b485c97cc0b537176cbe8ba88d0c572bb57c1c5b58d309424b076",
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    ]
+  },
+  {
+    "id": "custom_costume_street_123",
+    "kind": "costume",
+    "code": "ST-123",
+    "title": {
+      "zh": "黑色侧系带马甲与不对称白衬衫",
+      "en": "Black side-tie waistcoat and asymmetric white shirt"
+    },
+    "category": {
+      "id": "suit",
+      "zh": "西装穿搭",
+      "en": "Suits"
+    },
+    "series": {
+      "zh": "新增穿搭 · 20261110 · 第三批",
+      "en": "New outfits · 20261110 · Batch 3"
+    },
+    "extended": false,
+    "source": "custom",
+    "collection": "custom",
+    "keywords": {
+      "zh": "男性 写实 白色背景 完整穿搭 无人物 黑色 侧系带 马甲 不对称 白衬衫 黑色 阔腿裤 黑色德比鞋",
+      "en": "male photographic white background complete outfit no person black side tie waistcoat asymmetric white shirt black wide leg trousers black derby shoes"
+    },
+    "tags": [
+      {
+        "id": "male",
+        "zh": "男性",
+        "en": "Male"
+      },
+      {
+        "id": "photo",
+        "zh": "写实",
+        "en": "Photographic"
+      }
+    ],
+    "provenance": {
+      "originalSha256": "2397e41b821a89afa87032a6be60a90139f6d00a376523a7f3b5cd52c3434ec6",
+      "width": 1024,
+      "height": 1536,
+      "batch": "user-outfits-20261110-03",
+      "sourceFile": "custom/costume/images/1794284509_e06dabbf48e9c08b376b438d0288b62f.png",
+      "note": {
+        "zh": "用户提供的PNG原图，保留原始文件字节；WebP预览图和缩略图等比例缩小，未裁切、未重新生成。",
+        "en": "User-provided PNG original preserved byte-for-byte. WebP preview and thumbnail resized proportionally without cropping or regeneration."
+      }
+    },
+    "variants": [
+      {
+        "id": "custom_costume_street_123",
+        "angle": "front",
+        "label": {
+          "zh": "正面",
+          "en": "Front"
+        },
+        "original": "custom/costume/originals/custom_costume_street_123.png",
+        "image": "custom/costume/images/custom_costume_street_123.webp",
+        "thumbnail": "custom/costume/thumbnails/custom_costume_street_123.webp",
+        "provenance": {
+          "originalSha256": "2397e41b821a89afa87032a6be60a90139f6d00a376523a7f3b5cd52c3434ec6",
           "width": 1024,
           "height": 1536
         }
